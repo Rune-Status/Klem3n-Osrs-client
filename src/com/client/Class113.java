@@ -338,20 +338,20 @@ public class Class113 extends Class127 {
       Class182 var7 = new Class182(var1);
       Class182 var8 = new Class182(var1);
       var2.field2339 = var1.length - 23;
-      int var9 = var2.method3550();
-      int var10 = var2.method3550();
-      int var11 = var2.method3544();
-      int var12 = var2.method3544();
-      int var13 = var2.method3544();
-      int var14 = var2.method3544();
-      int var15 = var2.method3544();
-      int var16 = var2.method3544();
-      int var17 = var2.method3544();
-      int var18 = var2.method3550();
-      int var19 = var2.method3550();
-      int var20 = var2.method3550();
-      int var21 = var2.method3550();
-      int var22 = var2.method3550();
+      int var9 = var2.readUnsignedShort();
+      int var10 = var2.readUnsignedShort();
+      int var11 = var2.readUnsignedByte();
+      int var12 = var2.readUnsignedByte();
+      int var13 = var2.readUnsignedByte();
+      int var14 = var2.readUnsignedByte();
+      int var15 = var2.readUnsignedByte();
+      int var16 = var2.readUnsignedByte();
+      int var17 = var2.readUnsignedByte();
+      int var18 = var2.readUnsignedShort();
+      int var19 = var2.readUnsignedShort();
+      int var20 = var2.readUnsignedShort();
+      int var21 = var2.readUnsignedShort();
+      int var22 = var2.readUnsignedShort();
       int var23 = 0;
       int var24 = 0;
       int var25 = 0;
@@ -361,7 +361,7 @@ public class Class113 extends Class127 {
          var2.field2339 = 0;
 
          for(var26 = 0; var26 < var11; ++var26) {
-            byte var27 = this.field1459[var26] = var2.method3681();
+            byte var27 = this.field1459[var26] = var2.readByte();
             if (var27 == 0) {
                ++var23;
             }
@@ -494,7 +494,7 @@ public class Class113 extends Class127 {
       int var54;
       int var55;
       for(var51 = 0; var51 < var9; ++var51) {
-         var52 = var2.method3544();
+         var52 = var2.readUnsignedByte();
          var53 = 0;
          if ((var52 & 1) != 0) {
             var53 = var3.method3561();
@@ -517,7 +517,7 @@ public class Class113 extends Class127 {
          var49 = this.field1490[var51];
          var50 = this.field1462[var51];
          if (var17 == 1) {
-            this.field1479[var51] = var6.method3544();
+            this.field1479[var51] = var6.readUnsignedByte();
          }
       }
 
@@ -530,29 +530,29 @@ public class Class113 extends Class127 {
       var8.field2339 = var36;
 
       for(var51 = 0; var51 < var10; ++var51) {
-         this.field1471[var51] = (short)var2.method3550();
+         this.field1471[var51] = (short)var2.readUnsignedShort();
          if (var12 == 1) {
-            this.field1467[var51] = var3.method3681();
+            this.field1467[var51] = var3.readByte();
          }
 
          if (var13 == 255) {
-            this.field1468[var51] = var4.method3681();
+            this.field1468[var51] = var4.readByte();
          }
 
          if (var14 == 1) {
-            this.field1469[var51] = var5.method3681();
+            this.field1469[var51] = var5.readByte();
          }
 
          if (var15 == 1) {
-            this.field1478[var51] = var6.method3544();
+            this.field1478[var51] = var6.readUnsignedByte();
          }
 
          if (var16 == 1) {
-            this.field1472[var51] = (short)(var7.method3550() - 1);
+            this.field1472[var51] = (short)(var7.readUnsignedShort() - 1);
          }
 
          if (this.field1470 != null && this.field1472[var51] != -1) {
-            this.field1470[var51] = (byte)(var8.method3544() - 1);
+            this.field1470[var51] = (byte)(var8.readUnsignedByte() - 1);
          }
       }
 
@@ -565,7 +565,7 @@ public class Class113 extends Class127 {
 
       int var56;
       for(var55 = 0; var55 < var10; ++var55) {
-         var56 = var3.method3544();
+         var56 = var3.readUnsignedByte();
          if (var56 == 1) {
             var51 = var2.method3561() + var54;
             var52 = var2.method3561() + var51;
@@ -616,19 +616,19 @@ public class Class113 extends Class127 {
       for(var55 = 0; var55 < var11; ++var55) {
          var56 = this.field1459[var55] & 255;
          if (var56 == 0) {
-            this.field1476[var55] = (short)var2.method3550();
-            this.field1491[var55] = (short)var2.method3550();
-            this.field1464[var55] = (short)var2.method3550();
+            this.field1476[var55] = (short)var2.readUnsignedShort();
+            this.field1491[var55] = (short)var2.readUnsignedShort();
+            this.field1464[var55] = (short)var2.readUnsignedShort();
          }
       }
 
       var2.field2339 = var26;
-      var55 = var2.method3544();
+      var55 = var2.readUnsignedByte();
       if (var55 != 0) {
          new Class126();
-         var2.method3550();
-         var2.method3550();
-         var2.method3550();
+         var2.readUnsignedShort();
+         var2.readUnsignedShort();
+         var2.readUnsignedShort();
          var2.method3671();
       }
 
@@ -644,18 +644,18 @@ public class Class113 extends Class127 {
       Class182 var7 = new Class182(var1);
       Class182 var8 = new Class182(var1);
       var4.field2339 = var1.length - 18;
-      int var9 = var4.method3550();
-      int var10 = var4.method3550();
-      int var11 = var4.method3544();
-      int var12 = var4.method3544();
-      int var13 = var4.method3544();
-      int var14 = var4.method3544();
-      int var15 = var4.method3544();
-      int var16 = var4.method3544();
-      int var17 = var4.method3550();
-      int var18 = var4.method3550();
-      int var19 = var4.method3550();
-      int var20 = var4.method3550();
+      int var9 = var4.readUnsignedShort();
+      int var10 = var4.readUnsignedShort();
+      int var11 = var4.readUnsignedByte();
+      int var12 = var4.readUnsignedByte();
+      int var13 = var4.readUnsignedByte();
+      int var14 = var4.readUnsignedByte();
+      int var15 = var4.readUnsignedByte();
+      int var16 = var4.readUnsignedByte();
+      int var17 = var4.readUnsignedShort();
+      int var18 = var4.readUnsignedShort();
+      int var19 = var4.readUnsignedShort();
+      int var20 = var4.readUnsignedShort();
       byte var21 = 0;
       int var45 = var21 + var9;
       int var23 = var45;
@@ -752,7 +752,7 @@ public class Class113 extends Class127 {
       int var41;
       int var42;
       for(var38 = 0; var38 < var9; ++var38) {
-         var39 = var4.method3544();
+         var39 = var4.readUnsignedByte();
          var40 = 0;
          if ((var39 & 1) != 0) {
             var40 = var5.method3561();
@@ -775,7 +775,7 @@ public class Class113 extends Class127 {
          var36 = this.field1490[var38];
          var37 = this.field1462[var38];
          if (var16 == 1) {
-            this.field1479[var38] = var8.method3544();
+            this.field1479[var38] = var8.readUnsignedByte();
          }
       }
 
@@ -786,9 +786,9 @@ public class Class113 extends Class127 {
       var8.field2339 = var25;
 
       for(var38 = 0; var38 < var10; ++var38) {
-         this.field1471[var38] = (short)var4.method3550();
+         this.field1471[var38] = (short)var4.readUnsignedShort();
          if (var12 == 1) {
-            var39 = var5.method3544();
+            var39 = var5.readUnsignedByte();
             if ((var39 & 1) == 1) {
                this.field1467[var38] = 1;
                var2 = true;
@@ -810,15 +810,15 @@ public class Class113 extends Class127 {
          }
 
          if (var13 == 255) {
-            this.field1468[var38] = var6.method3681();
+            this.field1468[var38] = var6.readByte();
          }
 
          if (var14 == 1) {
-            this.field1469[var38] = var7.method3681();
+            this.field1469[var38] = var7.readByte();
          }
 
          if (var15 == 1) {
-            this.field1478[var38] = var8.method3544();
+            this.field1478[var38] = var8.readUnsignedByte();
          }
       }
 
@@ -832,7 +832,7 @@ public class Class113 extends Class127 {
       int var43;
       int var44;
       for(var42 = 0; var42 < var10; ++var42) {
-         var43 = var5.method3544();
+         var43 = var5.readUnsignedByte();
          if (var43 == 1) {
             var38 = var4.method3561() + var41;
             var39 = var4.method3561() + var38;
@@ -877,9 +877,9 @@ public class Class113 extends Class127 {
 
       for(var42 = 0; var42 < var11; ++var42) {
          this.field1459[var42] = 0;
-         this.field1476[var42] = (short)var4.method3550();
-         this.field1491[var42] = (short)var4.method3550();
-         this.field1464[var42] = (short)var4.method3550();
+         this.field1476[var42] = (short)var4.readUnsignedShort();
+         this.field1491[var42] = (short)var4.readUnsignedShort();
+         this.field1464[var42] = (short)var4.readUnsignedShort();
       }
 
       if (this.field1470 != null) {

@@ -28,7 +28,7 @@ public class Class254 extends Class206 {
    )
    void method4809(Class182 var1) {
       while(true) {
-         int var2 = var1.method3544();
+         int var2 = var1.readUnsignedByte();
          if (var2 == 0) {
             return;
          }
@@ -44,7 +44,7 @@ public class Class254 extends Class206 {
    )
    void method4810(Class182 var1, int var2) {
       if (var2 == 5) {
-         this.field3230 = var1.method3550();
+         this.field3230 = var1.readUnsignedShort();
       }
 
    }

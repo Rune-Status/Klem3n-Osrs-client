@@ -83,7 +83,7 @@ public class Class261 extends Class206 {
    )
    public void method4915(Class182 var1) {
       while(true) {
-         int var2 = var1.method3544();
+         int var2 = var1.readUnsignedByte();
          if (var2 == 0) {
             return;
          }
@@ -99,27 +99,27 @@ public class Class261 extends Class206 {
    )
    void method4916(Class182 var1, int var2) {
       if (var2 == 1) {
-         var1.method3550();
+         var1.readUnsignedShort();
       } else if (var2 == 2) {
-         this.field3310 = var1.method3544();
+         this.field3310 = var1.readUnsignedByte();
       } else if (var2 == 3) {
-         this.field3307 = var1.method3544();
+         this.field3307 = var1.readUnsignedByte();
       } else if (var2 == 4) {
          this.field3312 = 0;
       } else if (var2 == 5) {
-         this.field3313 = var1.method3550();
+         this.field3313 = var1.readUnsignedShort();
       } else if (var2 == 6) {
-         var1.method3544();
+         var1.readUnsignedByte();
       } else if (var2 == 7) {
          this.field3315 = var1.method3546();
       } else if (var2 == 8) {
          this.field3316 = var1.method3546();
       } else if (var2 == 11) {
-         this.field3312 = var1.method3550();
+         this.field3312 = var1.readUnsignedShort();
       } else if (var2 == 14) {
-         this.field3311 = var1.method3544();
+         this.field3311 = var1.readUnsignedByte();
       } else if (var2 == 15) {
-         this.field3318 = var1.method3544();
+         this.field3318 = var1.readUnsignedByte();
       }
 
    }

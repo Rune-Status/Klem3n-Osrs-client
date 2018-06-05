@@ -24,7 +24,7 @@ public class ServerPackets {
    @ObfuscatedSignature(
       signature = "Lfj;"
    )
-   public static final ServerPackets field2070 = new ServerPackets(3, -2);
+   public static final ServerPackets cs2ScriptPacket = new ServerPackets(3, -2);
    @ObfuscatedName("u")
    @ObfuscatedSignature(
       signature = "Lfj;"
@@ -174,7 +174,7 @@ public class ServerPackets {
    @ObfuscatedSignature(
       signature = "Lfj;"
    )
-   public static final ServerPackets field2127 = new ServerPackets(33, -2);
+   public static final ServerPackets npcUpdating = new ServerPackets(33, -2);
    @ObfuscatedName("at")
    @ObfuscatedSignature(
       signature = "Lfj;"
@@ -254,12 +254,12 @@ public class ServerPackets {
    @ObfuscatedSignature(
       signature = "Lfj;"
    )
-   public static final ServerPackets field2098 = new ServerPackets(49, 3);
+   public static final ServerPackets smallVarp = new ServerPackets(49, 3);
    @ObfuscatedName("ay")
    @ObfuscatedSignature(
       signature = "Lfj;"
    )
-   public static final ServerPackets field2099 = new ServerPackets(50, 6);
+   public static final ServerPackets largeVarp = new ServerPackets(50, 6);
    @ObfuscatedName("ag")
    @ObfuscatedSignature(
       signature = "Lfj;"

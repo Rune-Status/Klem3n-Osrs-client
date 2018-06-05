@@ -1073,7 +1073,7 @@ public abstract class Class47 extends Applet implements Runnable, FocusListener,
    )
    static final byte[] method912(byte[] var0) {
       Class182 var1 = new Class182(var0);
-      int var2 = var1.method3544();
+      int var2 = var1.readUnsignedByte();
       int var3 = var1.method3671();
       if (var3 < 0 || Class247.field3176 != 0 && var3 > Class247.field3176) {
          throw new RuntimeException();

@@ -17,8 +17,8 @@ public class Class223 extends Class204 {
    )
    Class223(Class182 var1) {
       var1.field2339 = var1.payload.length - 3;
-      int var2 = var1.method3544();
-      int var3 = var1.method3550();
+      int var2 = var1.readUnsignedByte();
+      int var3 = var1.readUnsignedShort();
       int var4 = var2 * 10 + 14;
       var1.field2339 = 0;
       int var5 = 0;
@@ -37,7 +37,7 @@ public class Class223 extends Class204 {
          var14 = -1;
 
          while(true) {
-            var15 = var1.method3544();
+            var15 = var1.readUnsignedByte();
             if (var15 != var14) {
                ++var4;
             }
@@ -99,7 +99,7 @@ public class Class223 extends Class204 {
 
       int var29;
       for(var29 = 0; var29 < var6; ++var29) {
-         var28 = var28 + var1.method3544() & 127;
+         var28 = var28 + var1.readUnsignedByte() & 127;
          if (var28 != 0 && var28 != 32) {
             if (var28 == 1) {
                ++var16;

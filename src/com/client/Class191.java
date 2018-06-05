@@ -176,7 +176,7 @@ public class Class191 {
                      Class134.method3102(Class138.field1876, Class69.field999[Class69.field1003], Class69.field999[Class69.field1003 + 1]);
                      var3 = 1;
                   } else if (var0 == 3103) {
-                     var29 = Class26.method433(Class169.field2195, Client.field626.field1218);
+                     var29 = Class26.method433(ClientPackets.field2195, Client.field626.field1218);
                      Client.field626.method1980(var29);
 
                      for(Class55 var27 = (Class55)Client.field741.method4018(); var27 != null; var27 = (Class55)Client.field741.method4019()) {
@@ -199,7 +199,7 @@ public class Class191 {
                         var14 = var6;
                      }
 
-                     var15 = Class26.method433(Class169.field2150, Client.field626.field1218);
+                     var15 = Class26.method433(ClientPackets.field2150, Client.field626.field1218);
                      var15.field2257.method3707(var14);
                      Client.field626.method1980(var15);
                      var3 = 1;
@@ -207,14 +207,14 @@ public class Class191 {
                      Class172 var28;
                      if (var0 == 3105) {
                         var4 = Class69.field1001[--Class55.field497];
-                        var28 = Class26.method433(Class169.field2209, Client.field626.field1218);
+                        var28 = Class26.method433(ClientPackets.field2209, Client.field626.field1218);
                         var28.field2257.method3532(var4.length() + 1);
                         var28.field2257.method3699(var4);
                         Client.field626.method1980(var28);
                         var3 = 1;
                      } else if (var0 == 3106) {
                         var4 = Class69.field1001[--Class55.field497];
-                        var28 = Class26.method433(Class169.field2136, Client.field626.field1218);
+                        var28 = Class26.method433(ClientPackets.field2136, Client.field626.field1218);
                         var28.field2257.method3532(var4.length() + 1);
                         var28.field2257.method3699(var4);
                         Client.field626.method1980(var28);
@@ -234,22 +234,22 @@ public class Class191 {
                               if (var11 != null && var11 != Class138.field1876 && var11.field552 != null && var11.field552.equals(var9)) {
                                  Class172 var12;
                                  if (var13 == 1) {
-                                    var12 = Class26.method433(Class169.field2206, Client.field626.field1218);
+                                    var12 = Class26.method433(ClientPackets.field2206, Client.field626.field1218);
                                     var12.field2257.method3532(0);
                                     var12.field2257.method3755(var7[var10]);
                                     Client.field626.method1980(var12);
                                  } else if (var13 == 4) {
-                                    var12 = Class26.method433(Class169.field2220, Client.field626.field1218);
+                                    var12 = Class26.method433(ClientPackets.field2220, Client.field626.field1218);
                                     var12.field2257.method3771(var7[var10]);
                                     var12.field2257.method3532(0);
                                     Client.field626.method1980(var12);
                                  } else if (var13 == 6) {
-                                    var12 = Class26.method433(Class169.field2163, Client.field626.field1218);
+                                    var12 = Class26.method433(ClientPackets.field2163, Client.field626.field1218);
                                     var12.field2257.method3575(0);
                                     var12.field2257.method3771(var7[var10]);
                                     Client.field626.method1980(var12);
                                  } else if (var13 == 7) {
-                                    var12 = Class26.method433(Class169.field2222, Client.field626.field1218);
+                                    var12 = Class26.method433(ClientPackets.field2222, Client.field626.field1218);
                                     var12.field2257.method3582(var7[var10]);
                                     var12.field2257.method3574(0);
                                     Client.field626.method1980(var12);
@@ -271,14 +271,14 @@ public class Class191 {
                            var14 = Class69.field999[Class69.field1003 + 1];
                            var6 = Class69.field999[Class69.field1003 + 2];
                            var31 = Class26.method434(var6);
-                           Class169.method3447(var31, var13, var14);
+                           ClientPackets.method3447(var31, var13, var14);
                            var3 = 1;
                         } else if (var0 == 3109) {
                            Class69.field1003 -= 2;
                            var13 = Class69.field999[Class69.field1003];
                            var14 = Class69.field999[Class69.field1003 + 1];
                            Class230 var38 = var2 ? Class276.field3561 : Class260.field3301;
-                           Class169.method3447(var38, var13, var14);
+                           ClientPackets.method3447(var38, var13, var14);
                            var3 = 1;
                         } else if (var0 == 3110) {
                            Class253.field3229 = Class69.field999[--Class69.field1003] == 1;
@@ -297,7 +297,7 @@ public class Class191 {
                            var3 = 1;
                         } else if (var0 == 3115) {
                            var13 = Class69.field999[--Class69.field1003];
-                           var28 = Class26.method433(Class169.field2225, Client.field626.field1218);
+                           var28 = Class26.method433(ClientPackets.field2225, Client.field626.field1218);
                            var28.field2257.method3755(var13);
                            Client.field626.method1980(var28);
                            var3 = 1;
@@ -311,7 +311,7 @@ public class Class191 {
                            } else if (var39.length() > 500) {
                               var3 = 1;
                            } else {
-                              Class172 var32 = Class26.method433(Class169.field2167, Client.field626.field1218);
+                              Class172 var32 = Class26.method433(ClientPackets.field2167, Client.field626.field1218);
                               var32.field2257.method3755(1 + Class316.method5820(var30) + Class316.method5820(var39));
                               var32.field2257.method3575(var13);
                               var32.field2257.method3699(var39);
@@ -724,7 +724,7 @@ public class Class191 {
                      } else if (var0 == 3604) {
                         var4 = Class69.field1001[--Class55.field497];
                         var14 = Class69.field999[--Class69.field1003];
-                        var15 = Class26.method433(Class169.field2168, Client.field626.field1218);
+                        var15 = Class26.method433(ClientPackets.field2168, Client.field626.field1218);
                         var15.field2257.method3532(Class316.method5820(var4) + 1);
                         var15.field2257.method3574(var14);
                         var15.field2257.method3699(var4);
@@ -809,7 +809,7 @@ public class Class191 {
                         Class12.method110(var4);
                         var3 = 1;
                      } else if (var0 == 3620) {
-                        var29 = Class26.method433(Class169.field2153, Client.field626.field1218);
+                        var29 = Class26.method433(ClientPackets.field2153, Client.field626.field1218);
                         var29.field2257.method3532(0);
                         Client.field626.method1980(var29);
                         var3 = 1;

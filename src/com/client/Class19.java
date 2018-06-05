@@ -92,7 +92,7 @@ public class Class19 {
       garbageValue = "-185686221"
    )
    public static void method197(int var0, int var1, int var2, boolean var3) {
-      Class172 var4 = Class26.method433(Class169.field2156, Client.field626.field1218);
+      Class172 var4 = Class26.method433(ClientPackets.field2156, Client.field626.field1218);
       var4.field2257.method3575(var2);
       var4.field2257.method3594(var3 ? Client.field853 : 0);
       var4.field2257.method3583(var1);

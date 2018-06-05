@@ -27,7 +27,7 @@ public class Class33 extends Class20 {
    )
    void method550(Class182 var1, Class182 var2, Class182 var3, int var4, boolean var5) {
       this.method200(var1, var4);
-      int var6 = var3.method3550();
+      int var6 = var3.readUnsignedShort();
       this.field292 = new HashSet(var6);
 
       int var7;
@@ -43,7 +43,7 @@ public class Class33 extends Class20 {
          this.field292.add(var8);
       }
 
-      var7 = var3.method3550();
+      var7 = var3.readUnsignedShort();
       this.field291 = new HashSet(var7);
 
       for(int var11 = 0; var11 < var7; ++var11) {
@@ -68,12 +68,12 @@ public class Class33 extends Class20 {
    )
    void method551(Class182 var1, boolean var2) {
       this.field290 = new LinkedList();
-      int var3 = var1.method3550();
+      int var3 = var1.readUnsignedShort();
 
       for(int var4 = 0; var4 < var3; ++var4) {
          int var5 = var1.method3546();
          Class226 var6 = new Class226(var1.method3671());
-         boolean var7 = var1.method3544() == 1;
+         boolean var7 = var1.readUnsignedByte() == 1;
          if (var2 || !var7) {
             this.field290.add(new Class13(var5, var6));
          }
@@ -105,7 +105,7 @@ public class Class33 extends Class20 {
          while(true) {
             int var9;
             while(!var8) {
-               var9 = var4.method3562();
+               var9 = var4.readSmart();
                if (var9 == 0) {
                   continue label71;
                }
@@ -113,7 +113,7 @@ public class Class33 extends Class20 {
                var7 += var9 - 1;
                int var10 = var7 & 63;
                int var11 = var7 >> 6 & 63;
-               int var12 = var4.method3544() >> 2;
+               int var12 = var4.readUnsignedByte() >> 2;
                int var13 = var11 + var1;
                int var14 = var10 + var2;
                if (var13 > 0 && var14 > 0 && var13 < 103 && var14 < 103) {
@@ -129,12 +129,12 @@ public class Class33 extends Class20 {
                }
             }
 
-            var9 = var4.method3562();
+            var9 = var4.readSmart();
             if (var9 == 0) {
                break;
             }
 
-            var4.method3544();
+            var4.readUnsignedByte();
          }
       }
    }

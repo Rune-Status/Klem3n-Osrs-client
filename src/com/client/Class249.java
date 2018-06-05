@@ -275,7 +275,7 @@ public class Class249 extends Class247 {
                Class22.method280(this, 255, this.field3187, this.field3190, (byte)0, true);
             } else {
                Class182 var9 = new Class182(Class47.method912(var3));
-               int var7 = var9.method3544();
+               int var7 = var9.readUnsignedByte();
                if (var7 != 5 && var7 != 6) {
                   throw new RuntimeException(var7 + "," + this.field3187 + "," + var2);
                } else {

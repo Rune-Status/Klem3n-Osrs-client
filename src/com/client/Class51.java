@@ -97,7 +97,7 @@ public class Class51 {
       if (!Client.field759) {
          var2 = var1.method3613();
          var3 = var1.method3646();
-         int var4 = var1.method3550();
+         int var4 = var1.readUnsignedShort();
          Class67.field973 = new int[var4][4];
 
          for(var5 = 0; var5 < var4; ++var5) {
@@ -136,10 +136,10 @@ public class Class51 {
 
          Class62.method1537(var2, var3, true);
       } else {
-         var2 = var1.method3585();
-         var3 = var1.method3585();
-         boolean var15 = var1.method3544() == 1;
-         var5 = var1.method3550();
+         var2 = var1.readUShort();
+         var3 = var1.readUShort();
+         boolean var15 = var1.readUnsignedByte() == 1;
+         var5 = var1.readUnsignedShort();
          var1.method3823();
 
          int var9;

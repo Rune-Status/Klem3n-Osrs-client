@@ -223,7 +223,7 @@ public class Class163 implements Runnable {
       int var4 = var1.field3323;
       int var5 = var1.field3326;
       int var6 = Class225.field2557[var5 - var4];
-      return Class225.field2558[var3] >> var4 & var6;
+      return Class225.clientVarps[var3] >> var4 & var6;
    }
 
    @ObfuscatedName("ic")

@@ -74,17 +74,17 @@ public class Class290 extends Class285 {
    public void method5424(Class182 var1, int var2) {
       while(true) {
          if (var1.field2339 < var2) {
-            boolean var3 = var1.method3544() == 1;
+            boolean var3 = var1.readUnsignedByte() == 1;
             Class291 var4 = new Class291(var1.method3738(), this.field3635);
             Class291 var5 = new Class291(var1.method3738(), this.field3635);
-            int var6 = var1.method3550();
-            int var7 = var1.method3544();
-            int var8 = var1.method3544();
+            int var6 = var1.readUnsignedShort();
+            int var7 = var1.readUnsignedByte();
+            int var8 = var1.readUnsignedByte();
             boolean var9 = (var8 & 2) != 0;
             boolean var10 = (var8 & 1) != 0;
             if (var6 > 0) {
                var1.method3738();
-               var1.method3544();
+               var1.readUnsignedByte();
                var1.method3671();
             }
 

@@ -19,7 +19,7 @@ public class Class91 {
    )
    Class91(Class182 var1) {
       for(int var2 = 0; var2 < 10; ++var2) {
-         int var3 = var1.method3544();
+         int var3 = var1.readUnsignedByte();
          if (var3 != 0) {
             --var1.field2339;
             this.field1241[var2] = new Class107();
@@ -27,8 +27,8 @@ public class Class91 {
          }
       }
 
-      this.field1239 = var1.method3550();
-      this.field1240 = var1.method3550();
+      this.field1239 = var1.readUnsignedShort();
+      this.field1240 = var1.readUnsignedShort();
    }
 
    @ObfuscatedName("w")

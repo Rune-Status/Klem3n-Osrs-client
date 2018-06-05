@@ -42,7 +42,7 @@ public class Class264 extends Class206 {
    )
    void method4948(Class182 var1) {
       while(true) {
-         int var2 = var1.method3544();
+         int var2 = var1.readUnsignedByte();
          if (var2 == 0) {
             return;
          }
@@ -58,7 +58,7 @@ public class Class264 extends Class206 {
    )
    void method4950(Class182 var1, int var2) {
       if (var2 == 1) {
-         byte var4 = var1.method3681();
+         byte var4 = var1.readByte();
          int var5 = var4 & 255;
          if (var5 == 0) {
             throw new IllegalArgumentException("");

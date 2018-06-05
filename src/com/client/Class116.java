@@ -31,22 +31,22 @@ public class Class116 extends Class204 {
       signature = "(Lgk;)V"
    )
    Class116(Class182 var1) {
-      this.field1527 = var1.method3550();
-      this.field1530 = var1.method3544() == 1;
-      int var2 = var1.method3544();
+      this.field1527 = var1.readUnsignedShort();
+      this.field1530 = var1.readUnsignedByte() == 1;
+      int var2 = var1.readUnsignedByte();
       if (var2 >= 1 && var2 <= 4) {
          this.field1533 = new int[var2];
 
          int var3;
          for(var3 = 0; var3 < var2; ++var3) {
-            this.field1533[var3] = var1.method3550();
+            this.field1533[var3] = var1.readUnsignedShort();
          }
 
          if (var2 > 1) {
             this.field1535 = new int[var2 - 1];
 
             for(var3 = 0; var3 < var2 - 1; ++var3) {
-               this.field1535[var3] = var1.method3544();
+               this.field1535[var3] = var1.readUnsignedByte();
             }
          }
 
@@ -54,7 +54,7 @@ public class Class116 extends Class204 {
             this.field1532 = new int[var2 - 1];
 
             for(var3 = 0; var3 < var2 - 1; ++var3) {
-               this.field1532[var3] = var1.method3544();
+               this.field1532[var3] = var1.readUnsignedByte();
             }
          }
 
@@ -64,8 +64,8 @@ public class Class116 extends Class204 {
             this.field1536[var3] = var1.method3671();
          }
 
-         this.field1537 = var1.method3544();
-         this.field1538 = var1.method3544();
+         this.field1537 = var1.readUnsignedByte();
+         this.field1538 = var1.readUnsignedByte();
          this.field1539 = null;
       } else {
          throw new RuntimeException();

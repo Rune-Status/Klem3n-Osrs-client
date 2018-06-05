@@ -86,7 +86,7 @@ public class Class272 extends Class206 {
    )
    void method5194(Class182 var1, int var2) {
       while(true) {
-         int var3 = var1.method3544();
+         int var3 = var1.readUnsignedByte();
          if (var3 == 0) {
             return;
          }
@@ -104,7 +104,7 @@ public class Class272 extends Class206 {
       if (var2 == 1) {
          this.field3533 = var1.method3552();
       } else if (var2 == 2) {
-         this.field3526 = var1.method3544();
+         this.field3526 = var1.readUnsignedByte();
       } else if (var2 == 5) {
          this.field3523 = false;
       } else if (var2 == 7) {

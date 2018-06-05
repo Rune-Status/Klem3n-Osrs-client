@@ -93,7 +93,7 @@ public class Class137 implements Comparator {
                }
 
                if (var6 == 5) {
-                  var7 = Class225.field2558[var2[var4++]];
+                  var7 = Class225.clientVarps[var2[var4++]];
                }
 
                if (var6 == 6) {
@@ -101,7 +101,7 @@ public class Class137 implements Comparator {
                }
 
                if (var6 == 7) {
-                  var7 = Class225.field2558[var2[var4++]] * 100 / '뜛';
+                  var7 = Class225.clientVarps[var2[var4++]] * 100 / '뜛';
                }
 
                if (var6 == 8) {
@@ -140,7 +140,7 @@ public class Class137 implements Comparator {
                }
 
                if (var6 == 13) {
-                  var9 = Class225.field2558[var2[var4++]];
+                  var9 = Class225.clientVarps[var2[var4++]];
                   int var13 = var2[var4++];
                   var7 = (var9 & 1 << var13) != 0 ? 1 : 0;
                }

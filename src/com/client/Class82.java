@@ -219,22 +219,22 @@ public class Class82 {
                return;
             }
 
-            int var14 = var13.method3544();
+            int var14 = var13.readUnsignedByte();
             if (var14 >= 0 && var14 <= 1) {
-               int var15 = var13.method3550();
+               int var15 = var13.readUnsignedShort();
 
                int var7;
                int var8;
                int var9;
                for(var7 = 0; var7 < var15; ++var7) {
-                  var8 = var13.method3550();
+                  var8 = var13.readUnsignedShort();
                   var9 = var13.method3671();
                   if (this.field1175[var8]) {
                      this.field1174[var8] = var9;
                   }
                }
 
-               var7 = var13.method3550();
+               var7 = var13.readUnsignedShort();
                var8 = 0;
 
                while(true) {
@@ -242,7 +242,7 @@ public class Class82 {
                      break label189;
                   }
 
-                  var9 = var13.method3550();
+                  var9 = var13.readUnsignedShort();
                   String var10 = var13.method3738();
                   if (this.field1173[var9]) {
                      this.field1170[var9] = var10;
@@ -370,7 +370,7 @@ public class Class82 {
       garbageValue = "-3"
    )
    static void method1921(int var0, int var1) {
-      Class172 var2 = Class26.method433(Class169.field2158, Client.field626.field1218);
+      Class172 var2 = Class26.method433(ClientPackets.field2158, Client.field626.field1218);
       var2.field2257.method3687(var0);
       var2.field2257.method3583(var1);
       Client.field626.method1980(var2);

@@ -9,7 +9,7 @@ public class Class225 {
    @ObfuscatedName("w")
    public static int[] field2559;
    @ObfuscatedName("s")
-   public static int[] field2558;
+   public static int[] clientVarps;
    @ObfuscatedName("u")
    static int[] field2562;
    @ObfuscatedName("eo")
@@ -27,6 +27,6 @@ public class Class225 {
       }
 
       field2559 = new int[2000];
-      field2558 = new int[2000];
+      clientVarps = new int[2000];
    }
 }

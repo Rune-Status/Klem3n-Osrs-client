@@ -43,8 +43,8 @@ public class Class1 {
       garbageValue = "1"
    )
    public Class1(Class182 var1, boolean var2) {
-      int var3 = var1.method3550();
-      boolean var4 = var1.method3544() == 1;
+      int var3 = var1.readUnsignedShort();
+      boolean var4 = var1.readUnsignedByte() == 1;
       byte var5;
       if (var4) {
          var5 = 1;
@@ -52,7 +52,7 @@ public class Class1 {
          var5 = 0;
       }
 
-      int var6 = var1.method3550();
+      int var6 = var1.readUnsignedShort();
       this.field10 = new ArrayList(var6);
 
       for(int var7 = 0; var7 < var6; ++var7) {

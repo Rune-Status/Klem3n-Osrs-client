@@ -643,11 +643,11 @@ public class Class29 {
       int var37;
       int var39;
       if (Class171.field2246 == var0) {
-         var2 = var1.method3550();
+         var2 = var1.readUnsignedShort();
          var3 = var1.method3551();
-         byte var38 = var1.method3681();
+         byte var38 = var1.readByte();
          var5 = var1.method3660();
-         var6 = var1.method3544() * 4;
+         var6 = var1.readUnsignedByte() * 4;
          var7 = var1.method3765();
          var8 = var1.method3765();
          var9 = var1.method3765();
@@ -655,7 +655,7 @@ public class Class29 {
          var39 = (var9 & 7) + Class226.field2568;
          var12 = var1.method3613();
          var13 = var1.method3577() * 4;
-         int var40 = var1.method3550();
+         int var40 = var1.readUnsignedShort();
          var4 = var38 + var10;
          var37 = var5 + var39;
          if (var10 >= 0 && var39 >= 0 && var10 < 104 && var39 < 104 && var4 >= 0 && var37 >= 0 && var4 < 104 && var37 < 104 && var12 != 65535) {
@@ -669,7 +669,7 @@ public class Class29 {
          }
 
       } else if (Class171.field2243 == var0) {
-         var2 = var1.method3607();
+         var2 = var1.readReverseUnsignedByte();
          var3 = (var2 >> 4 & 7) + Class57.field524;
          var4 = (var2 & 7) + Class226.field2568;
          var37 = var1.method3765();
@@ -683,11 +683,11 @@ public class Class29 {
 
       } else if (Class171.field2248 == var0) {
          var2 = var1.method3646();
-         var3 = var1.method3544();
+         var3 = var1.readUnsignedByte();
          var4 = var3 >> 2;
          var37 = var3 & 3;
          var6 = Client.field846[var4];
-         var7 = var1.method3544();
+         var7 = var1.readUnsignedByte();
          var8 = (var7 >> 4 & 7) + Class57.field524;
          var9 = (var7 & 7) + Class226.field2568;
          if (var8 >= 0 && var9 >= 0 && var8 < 103 && var9 < 103) {
@@ -743,12 +743,12 @@ public class Class29 {
          }
 
       } else if (Class171.field2241 == var0) {
-         var2 = var1.method3550();
-         var3 = var1.method3550();
+         var2 = var1.readUnsignedShort();
+         var3 = var1.readUnsignedShort();
          var4 = var1.method3765();
          var37 = (var4 >> 4 & 7) + Class57.field524;
          var6 = (var4 & 7) + Class226.field2568;
-         var7 = var1.method3544();
+         var7 = var1.readUnsignedByte();
          if (var37 >= 0 && var6 >= 0 && var37 < 104 && var6 < 104) {
             var37 = var37 * 128 + 64;
             var6 = var6 * 128 + 64;
@@ -763,7 +763,7 @@ public class Class29 {
             var3 = (var2 >> 4 & 7) + Class57.field524;
             var4 = (var2 & 7) + Class226.field2568;
             var37 = var1.method3613();
-            var6 = var1.method3585();
+            var6 = var1.readUShort();
             if (var3 >= 0 && var4 >= 0 && var3 < 104 && var4 < 104) {
                var33 = new Class80();
                var33.field1151 = var37;
@@ -777,7 +777,7 @@ public class Class29 {
             }
 
          } else if (Class171.field2247 == var0) {
-            var2 = var1.method3544();
+            var2 = var1.readUnsignedByte();
             var3 = var2 >> 2;
             var4 = var2 & 3;
             var37 = Client.field846[var3];
@@ -813,19 +813,19 @@ public class Class29 {
 
          } else {
             if (Class171.field2245 == var0) {
-               var2 = var1.method3607();
+               var2 = var1.readReverseUnsignedByte();
                var3 = (var2 >> 4 & 7) + Class57.field524;
                var4 = (var2 & 7) + Class226.field2568;
-               var5 = var1.method3681();
-               var6 = var1.method3550();
-               var7 = var1.method3607();
+               var5 = var1.readByte();
+               var6 = var1.readUnsignedShort();
+               var7 = var1.readReverseUnsignedByte();
                var8 = var7 >> 2;
                var9 = var7 & 3;
                var10 = Client.field846[var8];
-               byte var11 = var1.method3681();
-               var12 = var1.method3550();
-               var13 = var1.method3585();
-               byte var14 = var1.method3610();
+               byte var11 = var1.readByte();
+               var12 = var1.readUnsignedShort();
+               var13 = var1.readUShort();
+               byte var14 = var1.readAByte();
                int var35 = var1.method3613();
                byte var16 = var1.method3660();
                Class60 var17;
@@ -886,11 +886,11 @@ public class Class29 {
             }
 
             if (Class171.field2250 == var0) {
-               var2 = var1.method3607();
-               var3 = var1.method3544();
+               var2 = var1.readReverseUnsignedByte();
+               var3 = var1.readUnsignedByte();
                var4 = var3 >> 4 & 15;
                var37 = var3 & 7;
-               var6 = var1.method3607();
+               var6 = var1.readReverseUnsignedByte();
                var7 = (var6 >> 4 & 7) + Class57.field524;
                var8 = (var6 & 7) + Class226.field2568;
                var9 = var1.method3646();
@@ -908,7 +908,7 @@ public class Class29 {
             }
 
             if (Class171.field2244 == var0) {
-               var2 = var1.method3544();
+               var2 = var1.readUnsignedByte();
                var3 = (var2 >> 4 & 7) + Class57.field524;
                var4 = (var2 & 7) + Class226.field2568;
                var37 = var1.method3613();

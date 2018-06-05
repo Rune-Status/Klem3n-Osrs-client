@@ -39,7 +39,7 @@ public class Class96 {
       signature = "(Lgk;)V"
    )
    final void method2199(Class182 var1) {
-      this.field1317 = var1.method3544();
+      this.field1317 = var1.readUnsignedByte();
       this.field1314 = var1.method3671();
       this.field1318 = var1.method3671();
       this.method2197(var1);
@@ -50,13 +50,13 @@ public class Class96 {
       signature = "(Lgk;)V"
    )
    final void method2197(Class182 var1) {
-      this.field1316 = var1.method3544();
+      this.field1316 = var1.readUnsignedByte();
       this.field1323 = new int[this.field1316];
       this.field1319 = new int[this.field1316];
 
       for(int var2 = 0; var2 < this.field1316; ++var2) {
-         this.field1323[var2] = var1.method3550();
-         this.field1319[var2] = var1.method3550();
+         this.field1323[var2] = var1.readUnsignedShort();
+         this.field1319[var2] = var1.readUnsignedShort();
       }
 
    }

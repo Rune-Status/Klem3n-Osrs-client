@@ -151,7 +151,7 @@ public class Class56 extends Class204 {
          }
       }
 
-      Class172 var1 = Class26.method433(Class169.field2187, Client.field626.field1218);
+      Class172 var1 = Class26.method433(ClientPackets.field2187, Client.field626.field1218);
       var1.field2257.method3532(var0.length() + 1);
       var1.field2257.method3699(var0);
       Client.field626.method1980(var1);

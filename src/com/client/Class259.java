@@ -57,7 +57,7 @@ public class Class259 extends Class206 {
    )
    void method4880(Class182 var1, int var2) {
       while(true) {
-         int var3 = var1.method3544();
+         int var3 = var1.readUnsignedByte();
          if (var3 == 0) {
             return;
          }

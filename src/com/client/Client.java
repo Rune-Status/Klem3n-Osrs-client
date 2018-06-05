@@ -1349,7 +1349,7 @@ public final class Client extends Class47 implements Class288, Configuration{
       garbageValue = "-1300111147"
    )
    protected final void vmethod1505() {
-      Class169.method3446(new int[]{20, 260, 10000}, new int[]{1000, 100, 500});
+      ClientPackets.method3446(new int[]{20, 260, 10000}, new int[]{1000, 100, 500});
       Class26.field223 = field777 == 0 ? 'ꩊ' : field581 + '鱀';
       Class68.field996 = field777 == 0 ? 443 : field581 + '썐';
       Class290.field3636 = Class26.field223;
@@ -1848,9 +1848,9 @@ public final class Client extends Class47 implements Class288, Configuration{
 
                         if (Class250.field3208 == null) {
                            Class250.field3209.field2339 = 0;
-                           var9 = Class250.field3209.method3544();
-                           var10 = Class250.field3209.method3550();
-                           int var11 = Class250.field3209.method3544();
+                           var9 = Class250.field3209.readUnsignedByte();
+                           var10 = Class250.field3209.readUnsignedShort();
+                           int var11 = Class250.field3209.readUnsignedByte();
                            var12 = Class250.field3209.method3671();
                            long var13 = (long)(var10 + (var9 << 16));
                            Class246 var15 = (Class246)Class250.field3199.method4020(var13);
@@ -2391,7 +2391,7 @@ public final class Client extends Class47 implements Class288, Configuration{
                field698 = ((Class157)var1).vmethod3353();
                ((Class157)var1).vmethod3351(var2.payload, 0, 1);
                var2.field2339 = 0;
-               ServerPackets[] var26 = new ServerPackets[]{ServerPackets.field2100, ServerPackets.field2050, ServerPackets.field2051, ServerPackets.field2070, ServerPackets.field2053, ServerPackets.field2054, ServerPackets.field2055, ServerPackets.field2122, ServerPackets.field2083, ServerPackets.field2065, ServerPackets.field2059, ServerPackets.field2060, ServerPackets.field2061, ServerPackets.field2062, ServerPackets.field2063, ServerPackets.field2106, ServerPackets.field2107, ServerPackets.field2069, ServerPackets.field2128, ServerPackets.field2105, ServerPackets.field2116, ServerPackets.field2111, ServerPackets.field2071, ServerPackets.field2072, ServerPackets.field2114, ServerPackets.field2074, ServerPackets.field2075, ServerPackets.field2058, ServerPackets.field2077, ServerPackets.field2078, ServerPackets.field2131, ServerPackets.field2080, ServerPackets.field2081, ServerPackets.field2127, ServerPackets.field2079, ServerPackets.field2084, ServerPackets.field2085, ServerPackets.field2086, ServerPackets.field2087, ServerPackets.field2088, ServerPackets.field2089, ServerPackets.field2090, ServerPackets.field2091, ServerPackets.field2092, ServerPackets.field2093, ServerPackets.field2076, ServerPackets.field2095, ServerPackets.field2096, ServerPackets.field2097, ServerPackets.field2098, ServerPackets.field2099, ServerPackets.field2082, ServerPackets.field2101, ServerPackets.field2102, ServerPackets.field2094, ServerPackets.field2104, ServerPackets.playerUpdating, ServerPackets.field2064, ServerPackets.field2119, ServerPackets.field2108, ServerPackets.field2109, ServerPackets.field2049, ServerPackets.field2068, ServerPackets.field2112, ServerPackets.field2113, ServerPackets.field2129, ServerPackets.field2115, ServerPackets.field2073, ServerPackets.field2117, ServerPackets.field2118, ServerPackets.field2124, ServerPackets.field2120, ServerPackets.field2121, ServerPackets.field2103, ServerPackets.field2123, ServerPackets.field2066, ServerPackets.field2125, ServerPackets.field2130, ServerPackets.field2126, ServerPackets.field2057, ServerPackets.field2056, ServerPackets.field2110, ServerPackets.field2052, ServerPackets.field2132};
+               ServerPackets[] var26 = new ServerPackets[]{ServerPackets.field2100, ServerPackets.field2050, ServerPackets.field2051, ServerPackets.cs2ScriptPacket, ServerPackets.field2053, ServerPackets.field2054, ServerPackets.field2055, ServerPackets.field2122, ServerPackets.field2083, ServerPackets.field2065, ServerPackets.field2059, ServerPackets.field2060, ServerPackets.field2061, ServerPackets.field2062, ServerPackets.field2063, ServerPackets.field2106, ServerPackets.field2107, ServerPackets.field2069, ServerPackets.field2128, ServerPackets.field2105, ServerPackets.field2116, ServerPackets.field2111, ServerPackets.field2071, ServerPackets.field2072, ServerPackets.field2114, ServerPackets.field2074, ServerPackets.field2075, ServerPackets.field2058, ServerPackets.field2077, ServerPackets.field2078, ServerPackets.field2131, ServerPackets.field2080, ServerPackets.field2081, ServerPackets.npcUpdating, ServerPackets.field2079, ServerPackets.field2084, ServerPackets.field2085, ServerPackets.field2086, ServerPackets.field2087, ServerPackets.field2088, ServerPackets.field2089, ServerPackets.field2090, ServerPackets.field2091, ServerPackets.field2092, ServerPackets.field2093, ServerPackets.field2076, ServerPackets.field2095, ServerPackets.field2096, ServerPackets.field2097, ServerPackets.smallVarp, ServerPackets.largeVarp, ServerPackets.field2082, ServerPackets.field2101, ServerPackets.field2102, ServerPackets.field2094, ServerPackets.field2104, ServerPackets.playerUpdating, ServerPackets.field2064, ServerPackets.field2119, ServerPackets.field2108, ServerPackets.field2109, ServerPackets.field2049, ServerPackets.field2068, ServerPackets.field2112, ServerPackets.field2113, ServerPackets.field2129, ServerPackets.field2115, ServerPackets.field2073, ServerPackets.field2117, ServerPackets.field2118, ServerPackets.field2124, ServerPackets.field2120, ServerPackets.field2121, ServerPackets.field2103, ServerPackets.field2123, ServerPackets.field2066, ServerPackets.field2125, ServerPackets.field2130, ServerPackets.field2126, ServerPackets.field2057, ServerPackets.field2056, ServerPackets.field2110, ServerPackets.field2052, ServerPackets.field2132};
                var7 = var2.method3841();
                if (var7 < 0 || var7 >= var26.length) {
                   throw new IOException(var7 + " " + var2.field2339);
@@ -2401,7 +2401,7 @@ public final class Client extends Class47 implements Class288, Configuration{
                field626.packetSize = field626.recievedPacket.packetSize;
                ((Class157)var1).vmethod3351(var2.payload, 0, 2);
                var2.field2339 = 0;
-               field626.packetSize = var2.method3550();
+               field626.packetSize = var2.readUnsignedShort();
 
                try {
                   Class41.method702(Class182.field2334, "zap");
@@ -2417,7 +2417,7 @@ public final class Client extends Class47 implements Class288, Configuration{
                   var2.field2339 = 0;
                   ((Class157)var1).vmethod3351(var2.payload, 0, 2);
                   var2.field2339 = 0;
-                  Class249.field3192 = var2.method3550();
+                  Class249.field3192 = var2.readUnsignedShort();
                   field615 = 12;
                }
 
@@ -2440,7 +2440,7 @@ public final class Client extends Class47 implements Class288, Configuration{
 
                      ((Class157)var1).vmethod3351(var2.payload, 0, 2);
                      var2.field2339 = 0;
-                     field626.packetSize = var2.method3550();
+                     field626.packetSize = var2.readUnsignedShort();
                   }
 
                   if (((Class157)var1).vmethod3349() >= field626.packetSize) {
@@ -2540,7 +2540,7 @@ public final class Client extends Class47 implements Class288, Configuration{
                      Class254 var29 = Class63.method1549(var28);
                      if (var29 != null) {
                         Class225.field2559[var28] = 0;
-                        Class225.field2558[var28] = 0;
+                        Class225.clientVarps[var28] = 0;
                      }
                   }
 
@@ -2648,7 +2648,7 @@ public final class Client extends Class47 implements Class288, Configuration{
                   Class172 var14;
                   int var15;
                   if (field804.field3597) {
-                     var14 = Class26.method433(Class169.field2201, field626.field1218);
+                     var14 = Class26.method433(ClientPackets.field2201, field626.field1218);
                      var14.field2257.method3532(0);
                      var15 = var14.field2257.field2339;
                      field804.method5245(var14.field2257);
@@ -2669,7 +2669,7 @@ public final class Client extends Class47 implements Class288, Configuration{
                      if (!field580) {
                         Class26.field220.field522 = 0;
                      } else if (Class48.field431 != 0 || Class26.field220.field522 >= 40) {
-                        var30 = Class26.method433(Class169.field2228, field626.field1218);
+                        var30 = Class26.method433(ClientPackets.field2228, field626.field1218);
                         var30.field2257.method3532(0);
                         var3 = var30.field2257.field2339;
                         var4 = 0;
@@ -2759,7 +2759,7 @@ public final class Client extends Class47 implements Class288, Configuration{
                      }
 
                      var5 = (int)var16;
-                     var18 = Class26.method433(Class169.field2188, field626.field1218);
+                     var18 = Class26.method433(ClientPackets.field2188, field626.field1218);
                      var18.field2257.method3755((Class48.field431 == 2 ? 1 : 0) + (var5 << 1));
                      var18.field2257.method3755(var4);
                      var18.field2257.method3755(var3);
@@ -2767,7 +2767,7 @@ public final class Client extends Class47 implements Class288, Configuration{
                   }
 
                   if (Class39.field349 > 0) {
-                     var14 = Class26.method433(Class169.field2218, field626.field1218);
+                     var14 = Class26.method433(ClientPackets.field2218, field626.field1218);
                      var14.field2257.method3755(0);
                      var15 = var14.field2257.field2339;
                      long var19 = Class182.method3547();
@@ -2798,7 +2798,7 @@ public final class Client extends Class47 implements Class288, Configuration{
                   if (field807 && field664 <= 0) {
                      field664 = 20;
                      field807 = false;
-                     var14 = Class26.method433(Class169.field2183, field626.field1218);
+                     var14 = Class26.method433(ClientPackets.field2183, field626.field1218);
                      var14.field2257.method3582(field649);
                      var14.field2257.method3755(field717);
                      field626.method1980(var14);
@@ -2806,14 +2806,14 @@ public final class Client extends Class47 implements Class288, Configuration{
 
                   if (Class18.field146 && !field847) {
                      field847 = true;
-                     var14 = Class26.method433(Class169.field2227, field626.field1218);
+                     var14 = Class26.method433(ClientPackets.field2227, field626.field1218);
                      var14.field2257.method3532(1);
                      field626.method1980(var14);
                   }
 
                   if (!Class18.field146 && field847) {
                      field847 = false;
-                     var14 = Class26.method433(Class169.field2227, field626.field1218);
+                     var14 = Class26.method433(ClientPackets.field2227, field626.field1218);
                      var14.field2257.method3532(0);
                      field626.method1980(var14);
                   }
@@ -3081,7 +3081,7 @@ public final class Client extends Class47 implements Class288, Configuration{
                                                             var49.method4507(field691, field688);
                                                          }
 
-                                                         var45 = Class26.method433(Class169.field2170, field626.field1218);
+                                                         var45 = Class26.method433(ClientPackets.field2170, field626.field1218);
                                                          var45.field2257.method3576(var34);
                                                          var45.field2257.method3582(field688);
                                                          var45.field2257.method3687(Class276.field3559.field2691);
@@ -3105,7 +3105,7 @@ public final class Client extends Class47 implements Class288, Configuration{
                                              if (Class125.method2911()) {
                                                 var3 = Class125.field1772;
                                                 var4 = Class125.field1747;
-                                                var45 = Class26.method433(Class169.field2219, field626.field1218);
+                                                var45 = Class26.method433(ClientPackets.field2219, field626.field1218);
                                                 var45.field2257.method3532(5);
                                                 var45.field2257.method3755(var3 + Class62.field868);
                                                 var45.field2257.method3575(Class39.field341[82] ? (Class39.field341[81] ? 2 : 1) : 0);
@@ -3272,14 +3272,14 @@ public final class Client extends Class47 implements Class288, Configuration{
                                              if (var3 > 15000 && var4 > 15000) {
                                                 field627 = 250;
                                                 Class80.method1866(14500);
-                                                var18 = Class26.method433(Class169.field2152, field626.field1218);
+                                                var18 = Class26.method433(ClientPackets.field2152, field626.field1218);
                                                 field626.method1980(var18);
                                              }
 
                                              Class181.field2332.method1627();
                                              ++field626.field1224;
                                              if (field626.field1224 > 50) {
-                                                var18 = Class26.method433(Class169.field2211, field626.field1218);
+                                                var18 = Class26.method433(ClientPackets.field2211, field626.field1218);
                                                 field626.method1980(var18);
                                              }
 
@@ -3328,7 +3328,7 @@ public final class Client extends Class47 implements Class288, Configuration{
                   }
                }
 
-               var30 = Class26.method433(Class169.field2145, field626.field1218);
+               var30 = Class26.method433(ClientPackets.field2145, field626.field1218);
                var30.field2257.method3532(0);
                var3 = var30.field2257.field2339;
                Class123.method2869(var30.field2257);
@@ -3532,7 +3532,7 @@ public final class Client extends Class47 implements Class288, Configuration{
                }
 
                var1.field1222 = true;
-               ServerPackets[] var4 = new ServerPackets[]{ServerPackets.field2100, ServerPackets.field2050, ServerPackets.field2051, ServerPackets.field2070, ServerPackets.field2053, ServerPackets.field2054, ServerPackets.field2055, ServerPackets.field2122, ServerPackets.field2083, ServerPackets.field2065, ServerPackets.field2059, ServerPackets.field2060, ServerPackets.field2061, ServerPackets.field2062, ServerPackets.field2063, ServerPackets.field2106, ServerPackets.field2107, ServerPackets.field2069, ServerPackets.field2128, ServerPackets.field2105, ServerPackets.field2116, ServerPackets.field2111, ServerPackets.field2071, ServerPackets.field2072, ServerPackets.field2114, ServerPackets.field2074, ServerPackets.field2075, ServerPackets.field2058, ServerPackets.field2077, ServerPackets.field2078, ServerPackets.field2131, ServerPackets.field2080, ServerPackets.field2081, ServerPackets.field2127, ServerPackets.field2079, ServerPackets.field2084, ServerPackets.field2085, ServerPackets.field2086, ServerPackets.field2087, ServerPackets.field2088, ServerPackets.field2089, ServerPackets.field2090, ServerPackets.field2091, ServerPackets.field2092, ServerPackets.field2093, ServerPackets.field2076, ServerPackets.field2095, ServerPackets.field2096, ServerPackets.field2097, ServerPackets.field2098, ServerPackets.field2099, ServerPackets.field2082, ServerPackets.field2101, ServerPackets.field2102, ServerPackets.field2094, ServerPackets.field2104, ServerPackets.playerUpdating, ServerPackets.field2064, ServerPackets.field2119, ServerPackets.field2108, ServerPackets.field2109, ServerPackets.field2049, ServerPackets.field2068, ServerPackets.field2112, ServerPackets.field2113, ServerPackets.field2129, ServerPackets.field2115, ServerPackets.field2073, ServerPackets.field2117, ServerPackets.field2118, ServerPackets.field2124, ServerPackets.field2120, ServerPackets.field2121, ServerPackets.field2103, ServerPackets.field2123, ServerPackets.field2066, ServerPackets.field2125, ServerPackets.field2130, ServerPackets.field2126, ServerPackets.field2057, ServerPackets.field2056, ServerPackets.field2110, ServerPackets.field2052, ServerPackets.field2132};
+               ServerPackets[] var4 = getServerPackets();
                var6 = var3.method3841();
                if (var6 < 0 || var6 >= var4.length) {
                   throw new IOException(var6 + " " + var3.field2339);
@@ -3558,7 +3558,7 @@ public final class Client extends Class47 implements Class288, Configuration{
 
                var1.method1983().vmethod3351(var3.payload, 0, 2);
                var3.field2339 = 0;
-               var1.packetSize = var3.method3550();
+               var1.packetSize = var3.readUnsignedShort();
             }
 
             if (!var2.vmethod3350(var1.packetSize)) {
@@ -3588,9 +3588,9 @@ public final class Client extends Class47 implements Class288, Configuration{
             
             if (ServerPackets.field2131 == var1.recievedPacket) {
                var49 = var3.method3738();
-               var20 = (long)var3.method3550();
+               var20 = (long)var3.readUnsignedShort();
                var7 = (long)var3.method3552();
-               Class242 var58 = (Class242)Class76.method1803(Class20.method216(), var3.method3544());
+               Class242 var58 = (Class242)Class76.method1803(Class20.method216(), var3.readUnsignedByte());
                var10 = (var20 << 32) + var7;
                boolean var60 = false;
 
@@ -3611,7 +3611,7 @@ public final class Client extends Class47 implements Class288, Configuration{
 
                   String var14;
                   try {
-                     var15 = var3.method3562();
+                     var15 = var3.readSmart();
                      if (var15 > 32767) {
                         var15 = 32767;
                      }
@@ -3696,7 +3696,7 @@ public final class Client extends Class47 implements Class288, Configuration{
             int var31;
             if (ServerPackets.field2071 == var1.recievedPacket) {
                var25 = var3.method3671();
-               var26 = var3.method3550();
+               var26 = var3.readUnsignedShort();
                if (var25 < -70000) {
                   var26 += 32768;
                }
@@ -3708,11 +3708,11 @@ public final class Client extends Class47 implements Class288, Configuration{
                }
 
                for(; var3.field2339 < var1.packetSize; Class10.method96(var26, var27, var8 - 1, var31)) {
-                  var27 = var3.method3562();
-                  var8 = var3.method3550();
+                  var27 = var3.readSmart();
+                  var8 = var3.readUnsignedShort();
                   var31 = 0;
                   if (var8 != 0) {
-                     var31 = var3.method3544();
+                     var31 = var3.readUnsignedByte();
                      if (var31 == 255) {
                         var31 = var3.method3671();
                      }
@@ -3735,11 +3735,11 @@ public final class Client extends Class47 implements Class288, Configuration{
             }
 
             if (ServerPackets.field2108 == var1.recievedPacket) {
-               Class226.field2568 = var3.method3544();
+               Class226.field2568 = var3.readUnsignedByte();
                Class57.field524 = var3.method3577();
 
                while(var3.field2339 < var1.packetSize) {
-                  var25 = var3.method3544();
+                  var25 = var3.readUnsignedByte();
                   Class171[] var56 = new Class171[]{Class171.field2249, Class171.field2242, Class171.field2244, Class171.field2243, Class171.field2245, Class171.field2246, Class171.field2241, Class171.field2248, Class171.field2247, Class171.field2250};
                   Class171 var70 = var56[var25];
                   Class29.method479(var70);
@@ -3778,7 +3778,7 @@ public final class Client extends Class47 implements Class288, Configuration{
             boolean var71;
             if (ServerPackets.field2116 == var1.recievedPacket) {
                var25 = var3.method3609();
-               var71 = var3.method3607() == 1;
+               var71 = var3.readReverseUnsignedByte() == 1;
                var30 = Class26.method434(var25);
                if (var71 != var30.field2625) {
                   var30.field2625 = var71;
@@ -3789,7 +3789,7 @@ public final class Client extends Class47 implements Class288, Configuration{
                return true;
             }
 
-            if (ServerPackets.field2070 == var1.recievedPacket) {
+            if (ServerPackets.cs2ScriptPacket == var1.recievedPacket) {
                var49 = var3.method3738();
                Object[] var55 = new Object[var49.length() + 1];
 
@@ -3801,6 +3801,20 @@ public final class Client extends Class47 implements Class288, Configuration{
                   }
                }
 
+				String output = "sendCS2Script("+ var55[0] + ", ";
+
+				for(int i = var55.length-1; i >= 1; i--)
+				{
+					output += var55[i];
+
+					if(i != 1)
+						output+=", ";
+				}
+
+				output+=").";
+               
+				print(output);
+				
                var55[0] = new Integer(var3.method3671());
                Class56 var69 = new Class56();
                var69.field512 = var55;
@@ -3820,7 +3834,7 @@ public final class Client extends Class47 implements Class288, Configuration{
                   Class254 var54 = Class63.method1549(var25);
                   if (var54 != null) {
                      Class225.field2559[var25] = 0;
-                     Class225.field2558[var25] = 0;
+                     Class225.clientVarps[var25] = 0;
                   }
                }
 
@@ -3835,9 +3849,9 @@ public final class Client extends Class47 implements Class288, Configuration{
             if (ServerPackets.field2114 == var1.recievedPacket) {
                var49 = var3.method3738();
                var20 = var3.method3554();
-               var7 = (long)var3.method3550();
+               var7 = (long)var3.readUnsignedShort();
                var28 = (long)var3.method3552();
-               Class242 var11 = (Class242)Class76.method1803(Class20.method216(), var3.method3544());
+               Class242 var11 = (Class242)Class76.method1803(Class20.method216(), var3.readUnsignedByte());
                var32 = var28 + (var7 << 32);
                boolean var68 = false;
 
@@ -3858,7 +3872,7 @@ public final class Client extends Class47 implements Class288, Configuration{
 
                   String var16;
                   try {
-                     var35 = var3.method3562();
+                     var35 = var3.readSmart();
                      if (var35 > 32767) {
                         var35 = 32767;
                      }
@@ -3886,7 +3900,7 @@ public final class Client extends Class47 implements Class288, Configuration{
             }
 
             if (ServerPackets.field2052 == var1.recievedPacket) {
-               field810 = var3.method3544();
+               field810 = var3.readUnsignedByte();
                var1.recievedPacket = null;
                return true;
             }
@@ -3894,8 +3908,8 @@ public final class Client extends Class47 implements Class288, Configuration{
             String var65;
             String var74;
             if (ServerPackets.field2111 == var1.recievedPacket) {
-               var25 = var3.method3562();
-               var71 = var3.method3544() == 1;
+               var25 = var3.readSmart();
+               var71 = var3.readUnsignedByte() == 1;
                var65 = "";
                boolean var67 = false;
                if (var71) {
@@ -3915,9 +3929,9 @@ public final class Client extends Class47 implements Class288, Configuration{
             }
 
             if (ServerPackets.field2126 == var1.recievedPacket) {
-               var25 = var3.method3550();
-               var26 = var3.method3544();
-               var6 = var3.method3550();
+               var25 = var3.readUnsignedShort();
+               var26 = var3.readUnsignedByte();
+               var6 = var3.readUnsignedShort();
                if (field814 != 0 && var26 != 0 && field656 < 50) {
                   field817[field656] = var25;
                   field676[field656] = var26;
@@ -3934,11 +3948,11 @@ public final class Client extends Class47 implements Class288, Configuration{
             int var38;
             if (ServerPackets.field2097 == var1.recievedPacket) {
                field822 = true;
-               Class50.field456 = var3.method3544();
-               Class237.field3082 = var3.method3544();
-               Class11.field68 = var3.method3550();
-               Class72.field1033 = var3.method3544();
-               Class133.field1834 = var3.method3544();
+               Class50.field456 = var3.readUnsignedByte();
+               Class237.field3082 = var3.readUnsignedByte();
+               Class11.field68 = var3.readUnsignedShort();
+               Class72.field1033 = var3.readUnsignedByte();
+               Class133.field1834 = var3.readUnsignedByte();
                if (Class133.field1834 >= 100) {
                   var25 = Class50.field456 * 128 + 64;
                   var26 = Class237.field3082 * 128 + 64;
@@ -4011,10 +4025,10 @@ public final class Client extends Class47 implements Class288, Configuration{
             }
 
             if (ServerPackets.field2118 == var1.recievedPacket) {
-               var25 = var3.method3544();
-               var26 = var3.method3544();
-               var6 = var3.method3544();
-               var27 = var3.method3544();
+               var25 = var3.readUnsignedByte();
+               var26 = var3.readUnsignedByte();
+               var6 = var3.readUnsignedByte();
+               var27 = var3.readUnsignedByte();
                field823[var25] = true;
                field824[var25] = var26;
                field825[var25] = var6;
@@ -4026,7 +4040,7 @@ public final class Client extends Class47 implements Class288, Configuration{
 
             if (ServerPackets.field2069 == var1.recievedPacket) {
                var25 = var3.method3765();
-               var26 = var3.method3607();
+               var26 = var3.readReverseUnsignedByte();
                var65 = var3.method3738();
                if (var26 >= 1 && var26 <= 8) {
                   if (var65.equalsIgnoreCase("null")) {
@@ -4054,12 +4068,12 @@ public final class Client extends Class47 implements Class288, Configuration{
             }
 
             if (ServerPackets.field2075 == var1.recievedPacket) {
-               field808 = var3.method3544();
+               field808 = var3.readUnsignedByte();
                if (field808 == 255) {
                   field808 = 0;
                }
 
-               field809 = var3.method3544();
+               field809 = var3.readUnsignedByte();
                if (field809 == 255) {
                   field809 = 0;
                }
@@ -4070,7 +4084,7 @@ public final class Client extends Class47 implements Class288, Configuration{
 
             if (ServerPackets.field2122 == var1.recievedPacket) {
                var25 = var3.method3671();
-               var26 = var3.method3550();
+               var26 = var3.readUnsignedShort();
                if (var25 < -70000) {
                   var26 += 32768;
                }
@@ -4089,15 +4103,15 @@ public final class Client extends Class47 implements Class288, Configuration{
                }
 
                Class121.method2782(var26);
-               var27 = var3.method3550();
+               var27 = var3.readUnsignedShort();
 
                for(var8 = 0; var8 < var27; ++var8) {
-                  var31 = var3.method3544();
+                  var31 = var3.readUnsignedByte();
                   if (var31 == 255) {
                      var31 = var3.method3609();
                   }
 
-                  var38 = var3.method3550();
+                  var38 = var3.readUnsignedShort();
                   if (var30 != null && var8 < var30.field2724.length) {
                      var30.field2724[var8] = var38;
                      var30.field2725[var8] = var31;
@@ -4119,9 +4133,9 @@ public final class Client extends Class47 implements Class288, Configuration{
             Class230 var73;
             if (ServerPackets.field2101 == var1.recievedPacket) {
                var25 = var3.method3770();
-               var26 = var3.method3550();
+               var26 = var3.readUnsignedShort();
                var6 = var3.method3646();
-               var27 = var3.method3585();
+               var27 = var3.readUShort();
                var73 = Class26.method434(var25);
                if (var27 != var73.field2656 || var26 != var73.field2657 || var6 != var73.field2704) {
                   var73.field2656 = var27;
@@ -4137,7 +4151,7 @@ public final class Client extends Class47 implements Class288, Configuration{
             Class230 var77;
             if (ServerPackets.field2090 == var1.recievedPacket) {
                var25 = var3.method3551();
-               var26 = var3.method3595();
+               var26 = var3.readInt();
                var6 = var3.method3533();
                var77 = Class26.method434(var26);
                if (var6 != var77.field2607 || var25 != var77.field2615 || var77.field2610 != 0 || var77.field2611 != 0) {
@@ -4167,7 +4181,7 @@ public final class Client extends Class47 implements Class288, Configuration{
             }
 
             if (ServerPackets.field2054 == var1.recievedPacket) {
-               field598 = var3.method3585() * 30;
+               field598 = var3.readUShort() * 30;
                field775 = field801;
                var1.recievedPacket = null;
                return true;
@@ -4180,7 +4194,7 @@ public final class Client extends Class47 implements Class288, Configuration{
                }
 
                var26 = var3.method3671();
-               var6 = var3.method3595();
+               var6 = var3.readInt();
                var77 = Class26.method434(var26);
                Class269 var76;
                if (!var77.field2604) {
@@ -4227,13 +4241,13 @@ public final class Client extends Class47 implements Class288, Configuration{
             }
 
             if (ServerPackets.field2058 == var1.recievedPacket) {
-               Class143.field1899 = Class189.method3847(var3.method3544());
+               Class143.field1899 = Class189.method3847(var3.readUnsignedByte());
                var1.recievedPacket = null;
                return true;
             }
 
             if (ServerPackets.field2104 == var1.recievedPacket) {
-               var25 = var3.method3544();
+               var25 = var3.readUnsignedByte();
                Class132.method3096(var25);
                var1.recievedPacket = null;
                return true;
@@ -4247,11 +4261,11 @@ public final class Client extends Class47 implements Class288, Configuration{
 
             if (ServerPackets.field2073 == var1.recievedPacket) {
                field822 = true;
-               Class24.field203 = var3.method3544();
-               Class150.field1928 = var3.method3544();
-               Class224.field2555 = var3.method3550();
-               Class245.field3154 = var3.method3544();
-               Class84.field1197 = var3.method3544();
+               Class24.field203 = var3.readUnsignedByte();
+               Class150.field1928 = var3.readUnsignedByte();
+               Class224.field2555 = var3.readUnsignedShort();
+               Class245.field3154 = var3.readUnsignedByte();
+               Class84.field1197 = var3.readUnsignedByte();
                if (Class84.field1197 >= 100) {
                   Class109.field1431 = Class24.field203 * 128 + 64;
                   Class226.field2563 = Class150.field1928 * 128 + 64;
@@ -4276,9 +4290,9 @@ public final class Client extends Class47 implements Class288, Configuration{
             }
 
             if (ServerPackets.field2109 == var1.recievedPacket) {
-               field599 = var3.method3544();
+               field599 = var3.readUnsignedByte();
                if (field599 == 1) {
-                  field600 = var3.method3550();
+                  field600 = var3.readUnsignedShort();
                }
 
                if (field599 >= 2 && field599 <= 6) {
@@ -4308,13 +4322,13 @@ public final class Client extends Class47 implements Class288, Configuration{
                   }
 
                   field599 = 2;
-                  field602 = var3.method3550();
-                  field818 = var3.method3550();
-                  field604 = var3.method3544();
+                  field602 = var3.readUnsignedShort();
+                  field818 = var3.readUnsignedShort();
+                  field604 = var3.readUnsignedByte();
                }
 
                if (field599 == 10) {
-                  field579 = var3.method3550();
+                  field579 = var3.readUnsignedShort();
                }
 
                var1.recievedPacket = null;
@@ -4340,12 +4354,18 @@ public final class Client extends Class47 implements Class288, Configuration{
                return true;
             }
 
-            if (ServerPackets.field2099 == var1.recievedPacket) {
-               var25 = var3.method3595();
-               var26 = var3.method3585();
+            if (ServerPackets.largeVarp == var1.recievedPacket) {
+               var25 = var3.readInt();
+               var26 = var3.readUShort();
+               
+               if(DISPLAY_PACKET_METHODS)
+               {
+            	   print("setVarp("+var26+", " + var25 + ").");
+               }
+               
                Class225.field2559[var26] = var25;
-               if (Class225.field2558[var26] != var25) {
-                  Class225.field2558[var26] = var25;
+               if (Class225.clientVarps[var26] != var25) {
+                  Class225.clientVarps[var26] = var25;
                }
 
                Class45.method749(var26);
@@ -4355,7 +4375,7 @@ public final class Client extends Class47 implements Class288, Configuration{
             }
 
             if (ServerPackets.field2107 == var1.recievedPacket) {
-               var25 = var3.method3550();
+               var25 = var3.readUnsignedShort();
                field683 = var25;
                this.method1151(false);
                Class216.method4178(var25);
@@ -4438,7 +4458,7 @@ public final class Client extends Class47 implements Class288, Configuration{
                Class295.method5501();
                var25 = var3.method3770();
                var26 = var3.method3577();
-               var6 = var3.method3607();
+               var6 = var3.readReverseUnsignedByte();
                field640[var26] = var25;
                field712[var26] = var6;
                field713[var26] = 1;
@@ -4458,7 +4478,7 @@ public final class Client extends Class47 implements Class288, Configuration{
                var25 = var3.method3671();
                var26 = var3.method3671();
                var6 = Class37.method661();
-               Class172 var80 = Class26.method433(Class169.field2176, field626.field1218);
+               Class172 var80 = Class26.method433(ClientPackets.field2176, field626.field1218);
                var80.field2257.method3574(Class47.field393);
                var80.field2257.method3673(var25);
                var80.field2257.method3673(var26);
@@ -4562,8 +4582,8 @@ public final class Client extends Class47 implements Class288, Configuration{
             }
 
             if (ServerPackets.field2080 == var1.recievedPacket) {
-               var25 = var3.method3544();
-               if (var3.method3544() == 0) {
+               var25 = var3.readUnsignedByte();
+               if (var3.readUnsignedByte() == 0) {
                   field844[var25] = new Class4();
                   var3.field2339 += 18;
                } else {
@@ -4584,7 +4604,7 @@ public final class Client extends Class47 implements Class288, Configuration{
 
             if (ServerPackets.field2095 == var1.recievedPacket) {
                Class295.method5501();
-               field745 = var3.method3544();
+               field745 = var3.readUnsignedByte();
                field775 = field801;
                var1.recievedPacket = null;
                return true;
@@ -4592,7 +4612,7 @@ public final class Client extends Class47 implements Class288, Configuration{
 
             Class230 var52;
             if (ServerPackets.field2088 == var1.recievedPacket) {
-               var25 = var3.method3595();
+               var25 = var3.readInt();
                var52 = Class26.method434(var25);
 
                for(var6 = 0; var6 < var52.field2724.length; ++var6) {
@@ -4631,7 +4651,7 @@ public final class Client extends Class47 implements Class288, Configuration{
 
             if (ServerPackets.field2051 == var1.recievedPacket) {
                var25 = var3.method3591();
-               var26 = var3.method3585();
+               var26 = var3.readUShort();
                if (var26 == 65535) {
                   var26 = -1;
                }
@@ -4679,7 +4699,7 @@ public final class Client extends Class47 implements Class288, Configuration{
                return true;
             }
 
-            if (ServerPackets.field2127 == var1.recievedPacket) {
+            if (ServerPackets.npcUpdating == var1.recievedPacket) {
                Class245.method4619(false, var3);
                var1.recievedPacket = null;
                return true;
@@ -4698,14 +4718,14 @@ public final class Client extends Class47 implements Class288, Configuration{
             }
 
             if (ServerPackets.field2093 == var1.recievedPacket) {
-               field795 = var3.method3607();
-               field630 = var3.method3607();
+               field795 = var3.readReverseUnsignedByte();
+               field630 = var3.readReverseUnsignedByte();
                var1.recievedPacket = null;
                return true;
             }
 
             if (ServerPackets.field2132 == var1.recievedPacket) {
-               var64 = var3.method3544() == 1;
+               var64 = var3.readUnsignedByte() == 1;
                if (var64) {
                   Class70.field1013 = Class182.method3547() - var3.method3554();
                   Class19.field154 = new Class1(var3, true);
@@ -4718,12 +4738,18 @@ public final class Client extends Class47 implements Class288, Configuration{
                return true;
             }
 
-            if (ServerPackets.field2098 == var1.recievedPacket) {
-               byte var63 = var3.method3610();
-               var26 = var3.method3585();
+            if (ServerPackets.smallVarp == var1.recievedPacket) {
+               byte var63 = var3.readAByte();
+               var26 = var3.readUShort();
+               
+               if(DISPLAY_PACKET_METHODS)
+               {
+            	   print("setVarp("+var26+", " + var63 + ").");
+               }
+               
                Class225.field2559[var26] = var63;
-               if (Class225.field2558[var26] != var63) {
-                  Class225.field2558[var26] = var63;
+               if (Class225.clientVarps[var26] != var63) {
+                  Class225.clientVarps[var26] = var63;
                }
 
                Class45.method749(var26);
@@ -4741,9 +4767,9 @@ public final class Client extends Class47 implements Class288, Configuration{
             }
 
             if (ServerPackets.field2087 == var1.recievedPacket) {
-               var25 = var3.method3550();
-               var26 = var3.method3595();
-               var6 = var3.method3585();
+               var25 = var3.readUnsignedShort();
+               var26 = var3.readInt();
+               var6 = var3.readUShort();
                var77 = Class26.method434(var26);
                var77.field2732 = var6 + (var25 << 16);
                var1.recievedPacket = null;
@@ -4802,7 +4828,7 @@ public final class Client extends Class47 implements Class288, Configuration{
             if (ServerPackets.field2096 == var1.recievedPacket) {
                Class65 var50 = new Class65();
                var50.field950 = var3.method3738();
-               var50.field947 = var3.method3550();
+               var50.field947 = var3.readUnsignedShort();
                var26 = var3.method3671();
                var50.field948 = var26;
                Class48.method947(45);
@@ -4815,7 +4841,7 @@ public final class Client extends Class47 implements Class288, Configuration{
 
             if (ServerPackets.field2057 == var1.recievedPacket) {
                var25 = var3.method3765();
-               var26 = var3.method3595();
+               var26 = var3.readInt();
                var6 = var3.method3613();
                var39 = (Class55)field741.method4020((long)var26);
                if (var39 != null) {
@@ -4875,7 +4901,7 @@ public final class Client extends Class47 implements Class288, Configuration{
                var49 = var3.method3738();
 
                try {
-                  var27 = var3.method3562();
+                  var27 = var3.readSmart();
                   if (var27 > 32767) {
                      var27 = 32767;
                   }
@@ -4896,8 +4922,8 @@ public final class Client extends Class47 implements Class288, Configuration{
 
             if (ServerPackets.field2079 == var1.recievedPacket) {
                var25 = var3.field2339 + var1.packetSize;
-               var26 = var3.method3550();
-               var6 = var3.method3550();
+               var26 = var3.readUnsignedShort();
+               var6 = var3.readUnsignedShort();
                if (var26 != field683) {
                   field683 = var26;
                   this.method1151(false);
@@ -4912,8 +4938,8 @@ public final class Client extends Class47 implements Class288, Configuration{
                Class55 var40;
                for(; var6-- > 0; var40.field496 = true) {
                   var27 = var3.method3671();
-                  var8 = var3.method3550();
-                  var31 = var3.method3544();
+                  var8 = var3.readUnsignedShort();
+                  var31 = var3.readUnsignedByte();
                   var40 = (Class55)field741.method4020((long)var27);
                   if (var40 != null && var8 != var40.field501) {
                      Class20.method261(var40, true);
@@ -4959,8 +4985,8 @@ public final class Client extends Class47 implements Class288, Configuration{
 
                while(var3.field2339 < var25) {
                   var27 = var3.method3671();
-                  var8 = var3.method3550();
-                  var31 = var3.method3550();
+                  var8 = var3.readUnsignedShort();
+                  var31 = var3.readUnsignedShort();
                   var38 = var3.method3671();
 
                   for(int var42 = var8; var42 <= var31; ++var42) {
@@ -4974,9 +5000,9 @@ public final class Client extends Class47 implements Class288, Configuration{
             }
 
             if (ServerPackets.field2064 == var1.recievedPacket) {
-               for(var25 = 0; var25 < Class225.field2558.length; ++var25) {
-                  if (Class225.field2558[var25] != Class225.field2559[var25]) {
-                     Class225.field2558[var25] = Class225.field2559[var25];
+               for(var25 = 0; var25 < Class225.clientVarps.length; ++var25) {
+                  if (Class225.clientVarps[var25] != Class225.field2559[var25]) {
+                     Class225.clientVarps[var25] = Class225.field2559[var25];
                      Class45.method749(var25);
                      field764[++field765 - 1 & 31] = var25;
                   }
@@ -4988,7 +5014,7 @@ public final class Client extends Class47 implements Class288, Configuration{
 
             if (ServerPackets.field2130 == var1.recievedPacket) {
                var25 = var3.method3770();
-               var26 = var3.method3550();
+               var26 = var3.readUnsignedShort();
                var30 = Class26.method434(var25);
                if (var30.field2665 != 1 || var26 != var30.field2593) {
                   var30.field2665 = 1;
@@ -5258,7 +5284,7 @@ public final class Client extends Class47 implements Class288, Configuration{
                   }
 
                   if (var13 != null) {
-                     Class172 var12 = Class26.method433(Class169.field2164, field626.field1218);
+                     Class172 var12 = Class26.method433(ClientPackets.field2164, field626.field1218);
                      var12.field2257.method3583(field583.field2606);
                      var12.field2257.method3771(field583.field2649);
                      var12.field2257.method3673(field755.field2691);
@@ -5328,5 +5354,15 @@ public final class Client extends Class47 implements Class288, Configuration{
       } catch (Exception var9) {
          return 0L;
       }
+   }
+   
+   public ServerPackets[] getServerPackets()
+   {
+	   return new ServerPackets[]{ServerPackets.field2100, ServerPackets.field2050, ServerPackets.field2051, ServerPackets.cs2ScriptPacket, ServerPackets.field2053, ServerPackets.field2054, ServerPackets.field2055, ServerPackets.field2122, ServerPackets.field2083, ServerPackets.field2065, ServerPackets.field2059, ServerPackets.field2060, ServerPackets.field2061, ServerPackets.field2062, ServerPackets.field2063, ServerPackets.field2106, ServerPackets.field2107, ServerPackets.field2069, ServerPackets.field2128, ServerPackets.field2105, ServerPackets.field2116, ServerPackets.field2111, ServerPackets.field2071, ServerPackets.field2072, ServerPackets.field2114, ServerPackets.field2074, ServerPackets.field2075, ServerPackets.field2058, ServerPackets.field2077, ServerPackets.field2078, ServerPackets.field2131, ServerPackets.field2080, ServerPackets.field2081, ServerPackets.npcUpdating, ServerPackets.field2079, ServerPackets.field2084, ServerPackets.field2085, ServerPackets.field2086, ServerPackets.field2087, ServerPackets.field2088, ServerPackets.field2089, ServerPackets.field2090, ServerPackets.field2091, ServerPackets.field2092, ServerPackets.field2093, ServerPackets.field2076, ServerPackets.field2095, ServerPackets.field2096, ServerPackets.field2097, ServerPackets.smallVarp, ServerPackets.largeVarp, ServerPackets.field2082, ServerPackets.field2101, ServerPackets.field2102, ServerPackets.field2094, ServerPackets.field2104, ServerPackets.playerUpdating, ServerPackets.field2064, ServerPackets.field2119, ServerPackets.field2108, ServerPackets.field2109, ServerPackets.field2049, ServerPackets.field2068, ServerPackets.field2112, ServerPackets.field2113, ServerPackets.field2129, ServerPackets.field2115, ServerPackets.field2073, ServerPackets.field2117, ServerPackets.field2118, ServerPackets.field2124, ServerPackets.field2120, ServerPackets.field2121, ServerPackets.field2103, ServerPackets.field2123, ServerPackets.field2066, ServerPackets.field2125, ServerPackets.field2130, ServerPackets.field2126, ServerPackets.field2057, ServerPackets.field2056, ServerPackets.field2110, ServerPackets.field2052, ServerPackets.field2132};
+   }
+   
+   public void print(String s)
+   {
+	   System.out.println(s);
    }
 }

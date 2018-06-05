@@ -239,7 +239,7 @@ public class Class268 extends Class206 {
    )
    void method5026(Class182 var1) {
       while(true) {
-         int var2 = var1.method3544();
+         int var2 = var1.readUnsignedByte();
          if (var2 == 0) {
             return;
          }
@@ -257,7 +257,7 @@ public class Class268 extends Class206 {
       int var3;
       int var4;
       if (var2 == 1) {
-         var3 = var1.method3544();
+         var3 = var1.readUnsignedByte();
          if (var3 > 0) {
             if (this.field3390 != null && !field3416) {
                var1.field2339 += 3 * var3;
@@ -266,15 +266,15 @@ public class Class268 extends Class206 {
                this.field3390 = new int[var3];
 
                for(var4 = 0; var4 < var3; ++var4) {
-                  this.field3390[var4] = var1.method3550();
-                  this.field3378[var4] = var1.method3544();
+                  this.field3390[var4] = var1.readUnsignedShort();
+                  this.field3378[var4] = var1.readUnsignedByte();
                }
             }
          }
       } else if (var2 == 2) {
          this.field3373 = var1.method3738();
       } else if (var2 == 5) {
-         var3 = var1.method3544();
+         var3 = var1.readUnsignedByte();
          if (var3 > 0) {
             if (this.field3390 != null && !field3416) {
                var1.field2339 += 2 * var3;
@@ -283,21 +283,21 @@ public class Class268 extends Class206 {
                this.field3390 = new int[var3];
 
                for(var4 = 0; var4 < var3; ++var4) {
-                  this.field3390[var4] = var1.method3550();
+                  this.field3390[var4] = var1.readUnsignedShort();
                }
             }
          }
       } else if (var2 == 14) {
-         this.field3384 = var1.method3544();
+         this.field3384 = var1.readUnsignedByte();
       } else if (var2 == 15) {
-         this.field3385 = var1.method3544();
+         this.field3385 = var1.readUnsignedByte();
       } else if (var2 == 17) {
          this.field3386 = 0;
          this.field3404 = false;
       } else if (var2 == 18) {
          this.field3404 = false;
       } else if (var2 == 19) {
-         this.field3388 = var1.method3544();
+         this.field3388 = var1.readUnsignedByte();
       } else if (var2 == 21) {
          this.field3389 = 0;
       } else if (var2 == 22) {
@@ -305,55 +305,55 @@ public class Class268 extends Class206 {
       } else if (var2 == 23) {
          this.field3383 = true;
       } else if (var2 == 24) {
-         this.field3372 = var1.method3550();
+         this.field3372 = var1.readUnsignedShort();
          if (this.field3372 == 65535) {
             this.field3372 = -1;
          }
       } else if (var2 == 27) {
          this.field3386 = 1;
       } else if (var2 == 28) {
-         this.field3379 = var1.method3544();
+         this.field3379 = var1.readUnsignedByte();
       } else if (var2 == 29) {
-         this.field3394 = var1.method3681();
+         this.field3394 = var1.readByte();
       } else if (var2 == 39) {
-         this.field3403 = var1.method3681() * 25;
+         this.field3403 = var1.readByte() * 25;
       } else if (var2 >= 30 && var2 < 35) {
          this.field3387[var2 - 30] = var1.method3738();
          if (this.field3387[var2 - 30].equalsIgnoreCase("Hidden")) {
             this.field3387[var2 - 30] = null;
          }
       } else if (var2 == 40) {
-         var3 = var1.method3544();
+         var3 = var1.readUnsignedByte();
          this.field3381 = new short[var3];
          this.field3392 = new short[var3];
 
          for(var4 = 0; var4 < var3; ++var4) {
-            this.field3381[var4] = (short)var1.method3550();
-            this.field3392[var4] = (short)var1.method3550();
+            this.field3381[var4] = (short)var1.readUnsignedShort();
+            this.field3392[var4] = (short)var1.readUnsignedShort();
          }
       } else if (var2 == 41) {
-         var3 = var1.method3544();
+         var3 = var1.readUnsignedByte();
          this.field3382 = new short[var3];
          this.field3393 = new short[var3];
 
          for(var4 = 0; var4 < var3; ++var4) {
-            this.field3382[var4] = (short)var1.method3550();
-            this.field3393[var4] = (short)var1.method3550();
+            this.field3382[var4] = (short)var1.readUnsignedShort();
+            this.field3393[var4] = (short)var1.readUnsignedShort();
          }
       } else if (var2 == 62) {
          this.field3396 = true;
       } else if (var2 == 64) {
          this.field3400 = false;
       } else if (var2 == 65) {
-         this.field3401 = var1.method3550();
+         this.field3401 = var1.readUnsignedShort();
       } else if (var2 == 66) {
-         this.field3402 = var1.method3550();
+         this.field3402 = var1.readUnsignedShort();
       } else if (var2 == 67) {
-         this.field3399 = var1.method3550();
+         this.field3399 = var1.readUnsignedShort();
       } else if (var2 == 68) {
-         this.field3415 = var1.method3550();
+         this.field3415 = var1.readUnsignedShort();
       } else if (var2 == 69) {
-         var1.method3544();
+         var1.readUnsignedByte();
       } else if (var2 == 70) {
          this.field3369 = var1.method3551();
       } else if (var2 == 71) {
@@ -365,52 +365,52 @@ public class Class268 extends Class206 {
       } else if (var2 == 74) {
          this.field3398 = true;
       } else if (var2 == 75) {
-         this.field3409 = var1.method3544();
+         this.field3409 = var1.readUnsignedByte();
       } else if (var2 != 77 && var2 != 92) {
          if (var2 == 78) {
-            this.field3413 = var1.method3550();
-            this.field3414 = var1.method3544();
+            this.field3413 = var1.readUnsignedShort();
+            this.field3414 = var1.readUnsignedByte();
          } else if (var2 == 79) {
-            this.field3380 = var1.method3550();
-            this.field3408 = var1.method3550();
-            this.field3414 = var1.method3544();
-            var3 = var1.method3544();
+            this.field3380 = var1.readUnsignedShort();
+            this.field3408 = var1.readUnsignedShort();
+            this.field3414 = var1.readUnsignedByte();
+            var3 = var1.readUnsignedByte();
             this.field3417 = new int[var3];
 
             for(var4 = 0; var4 < var3; ++var4) {
-               this.field3417[var4] = var1.method3550();
+               this.field3417[var4] = var1.readUnsignedShort();
             }
          } else if (var2 == 81) {
-            this.field3389 = var1.method3544() * 256;
+            this.field3389 = var1.readUnsignedByte() * 256;
          } else if (var2 == 82) {
-            this.field3397 = var1.method3550();
+            this.field3397 = var1.readUnsignedShort();
          } else if (var2 == 249) {
             this.field3418 = Class39.method691(var1, this.field3418);
          }
       } else {
-         this.field3411 = var1.method3550();
+         this.field3411 = var1.readUnsignedShort();
          if (this.field3411 == 65535) {
             this.field3411 = -1;
          }
 
-         this.field3412 = var1.method3550();
+         this.field3412 = var1.readUnsignedShort();
          if (this.field3412 == 65535) {
             this.field3412 = -1;
          }
 
          var3 = -1;
          if (var2 == 92) {
-            var3 = var1.method3550();
+            var3 = var1.readUnsignedShort();
             if (var3 == 65535) {
                var3 = -1;
             }
          }
 
-         var4 = var1.method3544();
+         var4 = var1.readUnsignedByte();
          this.field3410 = new int[var4 + 2];
 
          for(int var5 = 0; var5 <= var4; ++var5) {
-            this.field3410[var5] = var1.method3550();
+            this.field3410[var5] = var1.readUnsignedShort();
             if (this.field3410[var5] == 65535) {
                this.field3410[var5] = -1;
             }
@@ -738,7 +738,7 @@ public class Class268 extends Class206 {
       if (this.field3411 != -1) {
          var1 = Class163.method3389(this.field3411);
       } else if (this.field3412 != -1) {
-         var1 = Class225.field2558[this.field3412];
+         var1 = Class225.clientVarps[this.field3412];
       }
 
       int var2;
@@ -799,32 +799,32 @@ public class Class268 extends Class206 {
    static void method5084(byte[] var0) {
       Class182 var1 = new Class182(var0);
       var1.field2339 = var0.length - 2;
-      Class319.field3802 = var1.method3550();
+      Class319.field3802 = var1.readUnsignedShort();
       Class7.field45 = new int[Class319.field3802];
       Class225.field2562 = new int[Class319.field3802];
       Class319.field3800 = new int[Class319.field3802];
       Class319.field3799 = new int[Class319.field3802];
       Class319.field3801 = new byte[Class319.field3802][];
       var1.field2339 = var0.length - 7 - Class319.field3802 * 8;
-      Class305.field3729 = var1.method3550();
-      Class319.field3798 = var1.method3550();
-      int var2 = (var1.method3544() & 255) + 1;
+      Class305.field3729 = var1.readUnsignedShort();
+      Class319.field3798 = var1.readUnsignedShort();
+      int var2 = (var1.readUnsignedByte() & 255) + 1;
 
       int var3;
       for(var3 = 0; var3 < Class319.field3802; ++var3) {
-         Class7.field45[var3] = var1.method3550();
+         Class7.field45[var3] = var1.readUnsignedShort();
       }
 
       for(var3 = 0; var3 < Class319.field3802; ++var3) {
-         Class225.field2562[var3] = var1.method3550();
+         Class225.field2562[var3] = var1.readUnsignedShort();
       }
 
       for(var3 = 0; var3 < Class319.field3802; ++var3) {
-         Class319.field3800[var3] = var1.method3550();
+         Class319.field3800[var3] = var1.readUnsignedShort();
       }
 
       for(var3 = 0; var3 < Class319.field3802; ++var3) {
-         Class319.field3799[var3] = var1.method3550();
+         Class319.field3799[var3] = var1.readUnsignedShort();
       }
 
       var1.field2339 = var0.length - 7 - Class319.field3802 * 8 - (var2 - 1) * 3;
@@ -845,16 +845,16 @@ public class Class268 extends Class206 {
          int var6 = var4 * var5;
          byte[] var7 = new byte[var6];
          Class319.field3801[var3] = var7;
-         int var8 = var1.method3544();
+         int var8 = var1.readUnsignedByte();
          int var9;
          if (var8 == 0) {
             for(var9 = 0; var9 < var6; ++var9) {
-               var7[var9] = var1.method3681();
+               var7[var9] = var1.readByte();
             }
          } else if (var8 == 1) {
             for(var9 = 0; var9 < var4; ++var9) {
                for(int var10 = 0; var10 < var5; ++var10) {
-                  var7[var9 + var10 * var4] = var1.method3681();
+                  var7[var9 + var10 * var4] = var1.readByte();
                }
             }
          }

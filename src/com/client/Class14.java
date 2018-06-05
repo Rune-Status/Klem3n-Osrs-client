@@ -169,20 +169,20 @@ public class Class14 implements Class31 {
       garbageValue = "-40"
    )
    public void vmethod639(Class182 var1) {
-      this.field100 = var1.method3544();
-      this.field90 = var1.method3544();
-      this.field91 = var1.method3550();
-      this.field95 = var1.method3544();
-      this.field97 = var1.method3544();
-      this.field102 = var1.method3550();
-      this.field105 = var1.method3544();
-      this.field98 = var1.method3544();
-      this.field93 = var1.method3550();
-      this.field99 = var1.method3544();
-      this.field101 = var1.method3544();
-      this.field96 = var1.method3550();
-      this.field89 = var1.method3544();
-      this.field103 = var1.method3544();
+      this.field100 = var1.readUnsignedByte();
+      this.field90 = var1.readUnsignedByte();
+      this.field91 = var1.readUnsignedShort();
+      this.field95 = var1.readUnsignedByte();
+      this.field97 = var1.readUnsignedByte();
+      this.field102 = var1.readUnsignedShort();
+      this.field105 = var1.readUnsignedByte();
+      this.field98 = var1.readUnsignedByte();
+      this.field93 = var1.readUnsignedShort();
+      this.field99 = var1.readUnsignedByte();
+      this.field101 = var1.readUnsignedByte();
+      this.field96 = var1.readUnsignedShort();
+      this.field89 = var1.readUnsignedByte();
+      this.field103 = var1.readUnsignedByte();
       this.method121();
    }
 
@@ -233,7 +233,7 @@ public class Class14 implements Class31 {
          }
 
          Client.field795 = Class69.field999[Class69.field1003 + 2];
-         Class172 var22 = Class26.method433(Class169.field2192, Client.field626.field1218);
+         Class172 var22 = Class26.method433(ClientPackets.field2192, Client.field626.field1218);
          var22.field2257.method3532(Client.field630);
          var22.field2257.method3532(Class143.field1899.field3735);
          var22.field2257.method3532(Client.field795);
@@ -248,7 +248,7 @@ public class Class14 implements Class31 {
             Class69.field1003 -= 2;
             var4 = Class69.field999[Class69.field1003];
             var5 = Class69.field999[Class69.field1003 + 1];
-            Class172 var15 = Class26.method433(Class169.field2185, Client.field626.field1218);
+            Class172 var15 = Class26.method433(ClientPackets.field2185, Client.field626.field1218);
             var15.field2257.method3532(Class316.method5820(var3) + 2);
             var15.field2257.method3699(var3);
             var15.field2257.method3532(var4 - 1);
@@ -425,7 +425,7 @@ public class Class14 implements Class31 {
                   }
                }
 
-               Class172 var8 = Class26.method433(Class169.field2179, Client.field626.field1218);
+               Class172 var8 = Class26.method433(ClientPackets.field2179, Client.field626.field1218);
                var8.field2257.method3532(0);
                int var9 = var8.field2257.field2339;
                var8.field2257.method3532(var4);
@@ -441,7 +441,7 @@ public class Class14 implements Class31 {
                   Class55.field497 -= 2;
                   var3 = Class69.field1001[Class55.field497];
                   String var18 = Class69.field1001[Class55.field497 + 1];
-                  Class172 var11 = Class26.method433(Class169.field2154, Client.field626.field1218);
+                  Class172 var11 = Class26.method433(ClientPackets.field2154, Client.field626.field1218);
                   var11.field2257.method3755(0);
                   var13 = var11.field2257.field2339;
                   var11.field2257.method3699(var3);
@@ -527,7 +527,7 @@ public class Class14 implements Class31 {
       if (Client.field626.field1224 >= 50 || var0) {
          Client.field626.field1224 = 0;
          if (!Client.field756 && Client.field626.method1983() != null) {
-            Class172 var1 = Class26.method433(Class169.field2211, Client.field626.field1218);
+            Class172 var1 = Class26.method433(ClientPackets.field2211, Client.field626.field1218);
             Client.field626.method1980(var1);
 
             try {

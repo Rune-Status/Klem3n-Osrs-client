@@ -102,7 +102,7 @@ public class Class245 extends Class204 {
          for(var14 = 0; var14 < Client.field624; ++var14) {
             var3 = Client.field666[var14];
             Class72 var15 = Client.field843[var3];
-            var5 = var1.method3544();
+            var5 = var1.readUnsignedByte();
             int var16;
             if ((var5 & 4) != 0) {
                var15.field891 = var1.method3646();
@@ -121,8 +121,8 @@ public class Class245 extends Class204 {
             }
 
             if ((var5 & 1) != 0) {
-               var16 = var1.method3585();
-               var7 = var1.method3585();
+               var16 = var1.readUShort();
+               var7 = var1.readUShort();
                var8 = var15.field931 - (var16 - Class62.field868 - Class62.field868) * 64;
                var9 = var15.field881 - (var7 - Client.field754 - Client.field754) * 64;
                if (var8 != 0 || var9 != 0) {
@@ -138,19 +138,19 @@ public class Class245 extends Class204 {
                      var9 = -1;
                      var10 = -1;
                      var11 = -1;
-                     var8 = var1.method3562();
+                     var8 = var1.readSmart();
                      if (var8 == 32767) {
-                        var8 = var1.method3562();
-                        var10 = var1.method3562();
-                        var9 = var1.method3562();
-                        var11 = var1.method3562();
+                        var8 = var1.readSmart();
+                        var10 = var1.readSmart();
+                        var9 = var1.readSmart();
+                        var11 = var1.readSmart();
                      } else if (var8 != 32766) {
-                        var10 = var1.method3562();
+                        var10 = var1.readSmart();
                      } else {
                         var8 = -1;
                      }
 
-                     var12 = var1.method3562();
+                     var12 = var1.readSmart();
                      var15.method1542(var8, var10, var9, var11, Client.field591, var12);
                   }
                }
@@ -158,10 +158,10 @@ public class Class245 extends Class204 {
                var7 = var1.method3577();
                if (var7 > 0) {
                   for(var8 = 0; var8 < var7; ++var8) {
-                     var9 = var1.method3562();
-                     var10 = var1.method3562();
+                     var9 = var1.readSmart();
+                     var10 = var1.readSmart();
                      if (var10 != 32767) {
-                        var11 = var1.method3562();
+                        var11 = var1.readSmart();
                         var12 = var1.method3765();
                         int var13 = var10 > 0 ? var1.method3765() : var12;
                         var15.method1543(var9, Client.field591, var10, var11, var12, var13);
@@ -186,7 +186,7 @@ public class Class245 extends Class204 {
             }
 
             if ((var5 & 16) != 0) {
-               var15.field897 = var1.method3585();
+               var15.field897 = var1.readUShort();
                if (var15.field897 == 65535) {
                   var15.field897 = -1;
                }
@@ -198,7 +198,7 @@ public class Class245 extends Class204 {
                   var16 = -1;
                }
 
-               var7 = var1.method3544();
+               var7 = var1.readUnsignedByte();
                if (var16 == var15.field903 && var16 != -1) {
                   var8 = Class3.method25(var16).field3553;
                   if (var8 == 1) {

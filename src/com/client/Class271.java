@@ -164,7 +164,7 @@ public class Class271 extends Class206 {
    )
    void method5186(Class182 var1) {
       while(true) {
-         int var2 = var1.method3544();
+         int var2 = var1.readUnsignedByte();
          if (var2 == 0) {
             return;
          }
@@ -182,77 +182,77 @@ public class Class271 extends Class206 {
       int var3;
       int var4;
       if (var2 == 1) {
-         var3 = var1.method3544();
+         var3 = var1.readUnsignedByte();
          this.field3493 = new int[var3];
 
          for(var4 = 0; var4 < var3; ++var4) {
-            this.field3493[var4] = var1.method3550();
+            this.field3493[var4] = var1.readUnsignedShort();
          }
       } else if (var2 == 2) {
          this.field3491 = var1.method3738();
       } else if (var2 == 12) {
-         this.field3497 = var1.method3544();
+         this.field3497 = var1.readUnsignedByte();
       } else if (var2 == 13) {
-         this.field3519 = var1.method3550();
+         this.field3519 = var1.readUnsignedShort();
       } else if (var2 == 14) {
-         this.field3498 = var1.method3550();
+         this.field3498 = var1.readUnsignedShort();
       } else if (var2 == 15) {
-         this.field3496 = var1.method3550();
+         this.field3496 = var1.readUnsignedShort();
       } else if (var2 == 16) {
-         this.field3486 = var1.method3550();
+         this.field3486 = var1.readUnsignedShort();
       } else if (var2 == 17) {
-         this.field3498 = var1.method3550();
-         this.field3495 = var1.method3550();
-         this.field3502 = var1.method3550();
-         this.field3501 = var1.method3550();
+         this.field3498 = var1.readUnsignedShort();
+         this.field3495 = var1.readUnsignedShort();
+         this.field3502 = var1.readUnsignedShort();
+         this.field3501 = var1.readUnsignedShort();
       } else if (var2 >= 30 && var2 < 35) {
          this.field3506[var2 - 30] = var1.method3738();
          if (this.field3506[var2 - 30].equalsIgnoreCase("Hidden")) {
             this.field3506[var2 - 30] = null;
          }
       } else if (var2 == 40) {
-         var3 = var1.method3544();
+         var3 = var1.readUnsignedByte();
          this.field3492 = new short[var3];
          this.field3503 = new short[var3];
 
          for(var4 = 0; var4 < var3; ++var4) {
-            this.field3492[var4] = (short)var1.method3550();
-            this.field3503[var4] = (short)var1.method3550();
+            this.field3492[var4] = (short)var1.readUnsignedShort();
+            this.field3503[var4] = (short)var1.readUnsignedShort();
          }
       } else if (var2 == 41) {
-         var3 = var1.method3544();
+         var3 = var1.readUnsignedByte();
          this.field3514 = new short[var3];
          this.field3505 = new short[var3];
 
          for(var4 = 0; var4 < var3; ++var4) {
-            this.field3514[var4] = (short)var1.method3550();
-            this.field3505[var4] = (short)var1.method3550();
+            this.field3514[var4] = (short)var1.readUnsignedShort();
+            this.field3505[var4] = (short)var1.readUnsignedShort();
          }
       } else if (var2 == 60) {
-         var3 = var1.method3544();
+         var3 = var1.readUnsignedByte();
          this.field3515 = new int[var3];
 
          for(var4 = 0; var4 < var3; ++var4) {
-            this.field3515[var4] = var1.method3550();
+            this.field3515[var4] = var1.readUnsignedShort();
          }
       } else if (var2 == 93) {
          this.field3507 = false;
       } else if (var2 == 95) {
-         this.field3508 = var1.method3550();
+         this.field3508 = var1.readUnsignedShort();
       } else if (var2 == 97) {
-         this.field3509 = var1.method3550();
+         this.field3509 = var1.readUnsignedShort();
       } else if (var2 == 98) {
-         this.field3521 = var1.method3550();
+         this.field3521 = var1.readUnsignedShort();
       } else if (var2 == 99) {
          this.field3511 = true;
       } else if (var2 == 100) {
-         this.field3512 = var1.method3681();
+         this.field3512 = var1.readByte();
       } else if (var2 == 101) {
-         this.field3513 = var1.method3681() * 5;
+         this.field3513 = var1.readByte() * 5;
       } else if (var2 == 102) {
-         this.field3494 = var1.method3550();
+         this.field3494 = var1.readUnsignedShort();
       } else if (var2 == 103) {
-         this.field3500 = var1.method3550();
+         this.field3500 = var1.readUnsignedShort();
       } else if (var2 != 106 && var2 != 118) {
          if (var2 == 107) {
             this.field3504 = false;
@@ -264,29 +264,29 @@ public class Class271 extends Class206 {
             this.field3522 = Class39.method691(var1, this.field3522);
          }
       } else {
-         this.field3499 = var1.method3550();
+         this.field3499 = var1.readUnsignedShort();
          if (this.field3499 == 65535) {
             this.field3499 = -1;
          }
 
-         this.field3518 = var1.method3550();
+         this.field3518 = var1.readUnsignedShort();
          if (this.field3518 == 65535) {
             this.field3518 = -1;
          }
 
          var3 = -1;
          if (var2 == 118) {
-            var3 = var1.method3550();
+            var3 = var1.readUnsignedShort();
             if (var3 == 65535) {
                var3 = -1;
             }
          }
 
-         var4 = var1.method3544();
+         var4 = var1.readUnsignedByte();
          this.field3516 = new int[var4 + 2];
 
          for(int var5 = 0; var5 <= var4; ++var5) {
-            this.field3516[var5] = var1.method3550();
+            this.field3516[var5] = var1.readUnsignedShort();
             if (this.field3516[var5] == 65535) {
                this.field3516[var5] = -1;
             }
@@ -434,7 +434,7 @@ public class Class271 extends Class206 {
       if (this.field3499 != -1) {
          var1 = Class163.method3389(this.field3499);
       } else if (this.field3518 != -1) {
-         var1 = Class225.field2558[this.field3518];
+         var1 = Class225.clientVarps[this.field3518];
       }
 
       int var2;
@@ -460,7 +460,7 @@ public class Class271 extends Class206 {
          if (this.field3499 != -1) {
             var1 = Class163.method3389(this.field3499);
          } else if (this.field3518 != -1) {
-            var1 = Class225.field2558[this.field3518];
+            var1 = Class225.clientVarps[this.field3518];
          }
 
          if (var1 >= 0 && var1 < this.field3516.length) {

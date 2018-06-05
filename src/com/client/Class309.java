@@ -394,12 +394,12 @@ public class Class309 implements Comparator {
                                                                                                       }
                                                                                                    } else {
                                                                                                       var13 = var19[var18];
-                                                                                                      Class225.field2558[var13] = Class69.field999[--Class69.field1003];
+                                                                                                      Class225.clientVarps[var13] = Class69.field999[--Class69.field1003];
                                                                                                       Class45.method749(var13);
                                                                                                    }
                                                                                                 } else {
                                                                                                    var13 = var19[var18];
-                                                                                                   Class69.field999[++Class69.field1003 - 1] = Class225.field2558[var13];
+                                                                                                   Class69.field999[++Class69.field1003 - 1] = Class225.clientVarps[var13];
                                                                                                 }
                                                                                              } else {
                                                                                                 Class69.field999[++Class69.field1003 - 1] = var19[var18];

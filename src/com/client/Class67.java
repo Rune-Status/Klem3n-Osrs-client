@@ -156,7 +156,7 @@ public class Class67 {
             } else if (this.method1630(var2)) {
                Class51.method995(var1);
             } else {
-               Class172 var3 = Class26.method433(Class169.field2194, Client.field626.field1218);
+               Class172 var3 = Class26.method433(ClientPackets.field2194, Client.field626.field1218);
                var3.field2257.method3532(Class316.method5820(var1));
                var3.field2257.method3699(var1);
                Client.field626.method1980(var3);
@@ -202,7 +202,7 @@ public class Class67 {
                   var4 = var10000.append(" from your friend list first").toString();
                   Class143.method3172(30, "", var4);
                } else {
-                  Class172 var3 = Class26.method433(Class169.field2221, Client.field626.field1218);
+                  Class172 var3 = Class26.method433(ClientPackets.field2221, Client.field626.field1218);
                   var3.field2257.method3532(Class316.method5820(var1));
                   var3.field2257.method3699(var1);
                   Client.field626.method1980(var3);
@@ -232,7 +232,7 @@ public class Class67 {
          if (var2.method5441()) {
             if (this.field970.method5393(var2)) {
                Client.field647 = Client.field801;
-               Class172 var3 = Class26.method433(Class169.field2203, Client.field626.field1218);
+               Class172 var3 = Class26.method433(ClientPackets.field2203, Client.field626.field1218);
                var3.field2257.method3532(Class316.method5820(var1));
                var3.field2257.method3699(var1);
                Client.field626.method1980(var3);
@@ -254,7 +254,7 @@ public class Class67 {
          if (var2.method5441()) {
             if (this.field975.method5393(var2)) {
                Client.field647 = Client.field801;
-               Class172 var3 = Class26.method433(Class169.field2157, Client.field626.field1218);
+               Class172 var3 = Class26.method433(ClientPackets.field2157, Client.field626.field1218);
                var3.field2257.method3532(Class316.method5820(var1));
                var3.field2257.method3699(var1);
                Client.field626.method1980(var3);
@@ -334,7 +334,7 @@ public class Class67 {
       }
 
       var7 <<= var5;
-      Class225.field2558[var4] = Class225.field2558[var4] & ~var7 | var1 << var5 & var7;
+      Class225.clientVarps[var4] = Class225.clientVarps[var4] & ~var7 | var1 << var5 & var7;
    }
 
    @ObfuscatedName("n")

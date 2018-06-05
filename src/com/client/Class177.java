@@ -312,7 +312,7 @@ public class Class177 {
    )
    static final void method3508(String var0) {
       if (Class14.field94 != null) {
-         Class172 var1 = Class26.method433(Class169.field2174, Client.field626.field1218);
+         Class172 var1 = Class26.method433(ClientPackets.field2174, Client.field626.field1218);
          var1.field2257.method3532(Class316.method5820(var0));
          var1.field2257.method3699(var0);
          Client.field626.method1980(var1);

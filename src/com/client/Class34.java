@@ -42,34 +42,34 @@ public class Class34 extends Class16 {
       garbageValue = "-1293834661"
    )
    void method561(Class182 var1, Class182 var2) {
-      int var3 = var2.method3544();
+      int var3 = var2.readUnsignedByte();
       if (var3 != Class25.field209.field211) {
          throw new IllegalStateException("");
       } else {
-         super.field120 = var2.method3544();
-         super.field121 = var2.method3544();
-         super.field127 = var2.method3550();
-         super.field117 = var2.method3550();
-         this.field299 = var2.method3544();
-         this.field297 = var2.method3544();
-         super.field118 = var2.method3550();
-         super.field119 = var2.method3550();
-         this.field298 = var2.method3544();
-         this.field296 = var2.method3544();
+         super.field120 = var2.readUnsignedByte();
+         super.field121 = var2.readUnsignedByte();
+         super.field127 = var2.readUnsignedShort();
+         super.field117 = var2.readUnsignedShort();
+         this.field299 = var2.readUnsignedByte();
+         this.field297 = var2.readUnsignedByte();
+         super.field118 = var2.readUnsignedShort();
+         super.field119 = var2.readUnsignedShort();
+         this.field298 = var2.readUnsignedByte();
+         this.field296 = var2.readUnsignedByte();
          super.field121 = Math.min(super.field121, 4);
          super.field125 = new short[1][64][64];
          super.field123 = new short[super.field121][64][64];
          super.field124 = new byte[super.field121][64][64];
          super.field116 = new byte[super.field121][64][64];
          super.field126 = new Class19[super.field121][64][64][];
-         var3 = var1.method3544();
+         var3 = var1.readUnsignedByte();
          if (var3 != Class24.field204.field205) {
             throw new IllegalStateException("");
          } else {
-            int var4 = var1.method3544();
-            int var5 = var1.method3544();
-            int var6 = var1.method3544();
-            int var7 = var1.method3544();
+            int var4 = var1.readUnsignedByte();
+            int var5 = var1.readUnsignedByte();
+            int var6 = var1.readUnsignedByte();
+            int var7 = var1.readUnsignedByte();
             if (var4 == super.field118 && var5 == super.field119 && var6 == this.field298 && var7 == this.field296) {
                for(int var8 = 0; var8 < 8; ++var8) {
                   for(int var9 = 0; var9 < 8; ++var9) {

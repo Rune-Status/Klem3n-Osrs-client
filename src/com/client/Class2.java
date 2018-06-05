@@ -36,7 +36,7 @@ public class Class2 {
    Class2(Class182 var1, byte var2, int var3) {
       this.field18 = var1.method3738();
       this.field21 = var1.method3738();
-      this.field19 = var1.method3550();
+      this.field19 = var1.readUnsignedShort();
       this.field20 = var1.method3554();
       int var4 = var1.method3671();
       int var5 = var1.method3671();

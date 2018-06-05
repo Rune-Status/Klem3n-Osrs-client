@@ -512,7 +512,7 @@ public final class Class30 {
          Client.field697[var0] = true;
       }
 
-      Class172 var3 = Class26.method433(Class169.field2215, Client.field626.field1218);
+      Class172 var3 = Class26.method433(ClientPackets.field2215, Client.field626.field1218);
       Class189 var4 = var3.field2257;
       int var2 = Client.field792 ? 2 : 1;
       var4.method3532(var2);

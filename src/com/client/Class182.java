@@ -317,7 +317,7 @@ public class Class182 extends Class204 {
       signature = "(I)I",
       garbageValue = "-1847684940"
    )
-   public int method3544() {
+   public int readUnsignedByte() {
       return this.payload[++this.field2339 - 1] & 255;
    }
 
@@ -326,7 +326,7 @@ public class Class182 extends Class204 {
       signature = "(I)B",
       garbageValue = "1250297886"
    )
-   public byte method3681() {
+   public byte readByte() {
       return this.payload[++this.field2339 - 1];
    }
 
@@ -335,7 +335,7 @@ public class Class182 extends Class204 {
       signature = "(I)I",
       garbageValue = "1084016458"
    )
-   public int method3550() {
+   public int readUnsignedShort() {
       this.field2339 += 2;
       return (this.payload[this.field2339 - 1] & 255) + ((this.payload[this.field2339 - 2] & 255) << 8);
    }
@@ -392,7 +392,7 @@ public class Class182 extends Class204 {
       garbageValue = "-1667163047"
    )
    public boolean method3555() {
-      return (this.method3544() & 1) == 1;
+      return (this.readUnsignedByte() & 1) == 1;
    }
 
    @ObfuscatedName("as")
@@ -537,7 +537,7 @@ public class Class182 extends Class204 {
    )
    public int method3561() {
       int var1 = this.payload[this.field2339] & 255;
-      return var1 < 128 ? this.method3544() - 64 : this.method3550() - '쀀';
+      return var1 < 128 ? this.readUnsignedByte() - 64 : this.readUnsignedShort() - '쀀';
    }
 
    @ObfuscatedName("ap")
@@ -545,9 +545,9 @@ public class Class182 extends Class204 {
       signature = "(S)I",
       garbageValue = "-18314"
    )
-   public int method3562() {
+   public int readSmart() {
       int var1 = this.payload[this.field2339] & 255;
-      return var1 < 128 ? this.method3544() : this.method3550() - '耀';
+      return var1 < 128 ? this.readUnsignedByte() : this.readUnsignedShort() - '耀';
    }
 
    @ObfuscatedName("aa")
@@ -559,7 +559,7 @@ public class Class182 extends Class204 {
       int var1 = 0;
 
       int var2;
-      for(var2 = this.method3562(); var2 == 32767; var2 = this.method3562()) {
+      for(var2 = this.readSmart(); var2 == 32767; var2 = this.readSmart()) {
          var1 += 32767;
       }
 
@@ -573,7 +573,7 @@ public class Class182 extends Class204 {
       garbageValue = "-1860852380"
    )
    public int method3611() {
-      return this.payload[this.field2339] < 0 ? this.method3671() & Integer.MAX_VALUE : this.method3550();
+      return this.payload[this.field2339] < 0 ? this.method3671() & Integer.MAX_VALUE : this.readUnsignedShort();
    }
 
    @ObfuscatedName("au")
@@ -585,7 +585,7 @@ public class Class182 extends Class204 {
       if (this.payload[this.field2339] < 0) {
          return this.method3671() & Integer.MAX_VALUE;
       } else {
-         int var1 = this.method3550();
+         int var1 = this.readUnsignedShort();
          return var1 == 32767 ? -1 : var1;
       }
    }
@@ -800,7 +800,7 @@ public class Class182 extends Class204 {
       signature = "(I)I",
       garbageValue = "-333234069"
    )
-   public int method3607() {
+   public int readReverseUnsignedByte() {
       return 0 - this.payload[++this.field2339 - 1] & 255;
    }
 
@@ -827,7 +827,7 @@ public class Class182 extends Class204 {
       signature = "(I)B",
       garbageValue = "-1272283600"
    )
-   public byte method3610() {
+   public byte readAByte() {
       return (byte)(128 - this.payload[++this.field2339 - 1]);
    }
 
@@ -866,7 +866,7 @@ public class Class182 extends Class204 {
       signature = "(B)I",
       garbageValue = "-125"
    )
-   public int method3585() {
+   public int readUShort() {
       this.field2339 += 2;
       return ((this.payload[this.field2339 - 1] & 255) << 8) + (this.payload[this.field2339 - 2] & 255);
    }
@@ -983,7 +983,7 @@ public class Class182 extends Class204 {
       signature = "(I)I",
       garbageValue = "2045011915"
    )
-   public int method3595() {
+   public int readInt() {
       this.field2339 += 4;
       return (this.payload[this.field2339 - 4] & 255) + ((this.payload[this.field2339 - 3] & 255) << 8) + ((this.payload[this.field2339 - 2] & 255) << 16) + ((this.payload[this.field2339 - 1] & 255) << 24);
    }

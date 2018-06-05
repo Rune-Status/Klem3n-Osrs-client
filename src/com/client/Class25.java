@@ -66,7 +66,7 @@ public class Class25 {
          }
 
          if (var1 == 326) {
-            Class172 var4 = Class26.method433(Class169.field2173, Client.field626.field1218);
+            Class172 var4 = Class26.method433(ClientPackets.field2173, Client.field626.field1218);
             Client.field841.method4466(var4.field2257);
             Client.field626.method1980(var4);
             return true;

@@ -158,9 +158,9 @@ public final class Class60 extends Class63 {
    )
    final void method1082(Class182 var1) {
       var1.field2339 = 0;
-      int var2 = var1.method3544();
-      this.field570 = var1.method3681();
-      this.field548 = var1.method3681();
+      int var2 = var1.readUnsignedByte();
+      this.field570 = var1.readByte();
+      this.field548 = var1.readByte();
       int var3 = -1;
       this.field568 = 0;
       int[] var4 = new int[12];
@@ -168,14 +168,14 @@ public final class Class60 extends Class63 {
       int var6;
       int var7;
       for(int var5 = 0; var5 < 12; ++var5) {
-         var6 = var1.method3544();
+         var6 = var1.readUnsignedByte();
          if (var6 == 0) {
             var4[var5] = 0;
          } else {
-            var7 = var1.method3544();
+            var7 = var1.readUnsignedByte();
             var4[var5] = var7 + (var6 << 8);
             if (var5 == 0 && var4[0] == 65535) {
-               var3 = var1.method3550();
+               var3 = var1.readUnsignedShort();
                break;
             }
 
@@ -191,7 +191,7 @@ public final class Class60 extends Class63 {
       int[] var9 = new int[5];
 
       for(var6 = 0; var6 < 5; ++var6) {
-         var7 = var1.method3544();
+         var7 = var1.readUnsignedByte();
          if (var7 < 0 || var7 >= Class227.field2572[var6].length) {
             var7 = 0;
          }
@@ -199,38 +199,38 @@ public final class Class60 extends Class63 {
          var9[var6] = var7;
       }
 
-      super.field893 = var1.method3550();
+      super.field893 = var1.readUnsignedShort();
       if (super.field893 == 65535) {
          super.field893 = -1;
       }
 
-      super.field877 = var1.method3550();
+      super.field877 = var1.readUnsignedShort();
       if (super.field877 == 65535) {
          super.field877 = -1;
       }
 
       super.field878 = super.field877;
-      super.field899 = var1.method3550();
+      super.field899 = var1.readUnsignedShort();
       if (super.field899 == 65535) {
          super.field899 = -1;
       }
 
-      super.field880 = var1.method3550();
+      super.field880 = var1.readUnsignedShort();
       if (super.field880 == 65535) {
          super.field880 = -1;
       }
 
-      super.field870 = var1.method3550();
+      super.field870 = var1.readUnsignedShort();
       if (super.field870 == 65535) {
          super.field870 = -1;
       }
 
-      super.field882 = var1.method3550();
+      super.field882 = var1.readUnsignedShort();
       if (super.field882 == 65535) {
          super.field882 = -1;
       }
 
-      super.field883 = var1.method3550();
+      super.field883 = var1.readUnsignedShort();
       if (super.field883 == 65535) {
          super.field883 = -1;
       }
@@ -242,9 +242,9 @@ public final class Class60 extends Class63 {
          Class152.field1939 = this.field552.method5447();
       }
 
-      this.field551 = var1.method3544();
-      this.field564 = var1.method3550();
-      this.field566 = var1.method3544() == 1;
+      this.field551 = var1.readUnsignedByte();
+      this.field564 = var1.readUnsignedShort();
+      this.field566 = var1.readUnsignedByte() == 1;
       if (Client.field777 == 0 && Client.field747 >= 2) {
          this.field566 = false;
       }

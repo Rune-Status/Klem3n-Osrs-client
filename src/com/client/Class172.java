@@ -21,7 +21,7 @@ public class Class172 extends Class204 {
    @ObfuscatedSignature(
       signature = "Lfi;"
    )
-   Class169 field2254;
+   ClientPackets field2254;
    @ObfuscatedName("w")
    @ObfuscatedGetter(
       intValue = 9187127

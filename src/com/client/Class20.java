@@ -73,10 +73,10 @@ public class Class20 {
       this.field171 = var1.method3738();
       this.field165 = new Class226(var1.method3671());
       this.field163 = var1.method3671();
-      var1.method3544();
-      this.field173 = var1.method3544() == 1;
-      this.field164 = var1.method3544();
-      int var3 = var1.method3544();
+      var1.readUnsignedByte();
+      this.field173 = var1.readUnsignedByte() == 1;
+      this.field164 = var1.readUnsignedByte();
+      int var3 = var1.readUnsignedByte();
       this.field160 = new LinkedList();
 
       for(int var4 = 0; var4 < var3; ++var4) {
@@ -92,7 +92,7 @@ public class Class20 {
       garbageValue = "2074726298"
    )
    Class31 method201(Class182 var1) {
-      int var2 = var1.method3544();
+      int var2 = var1.readUnsignedByte();
       Class15 var3 = (Class15)Class76.method1803(Class15.method145(), var2);
       Object var4 = null;
       switch(var3.field110) {

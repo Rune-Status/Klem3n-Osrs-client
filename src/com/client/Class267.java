@@ -112,7 +112,7 @@ public class Class267 extends Class206 {
    )
    void method4990(Class182 var1) {
       while(true) {
-         int var2 = var1.method3544();
+         int var2 = var1.readUnsignedByte();
          if (var2 == 0) {
             return;
          }
@@ -144,41 +144,41 @@ public class Class267 extends Class206 {
       } else if (var2 == 8) {
          this.field3363 = var1.method3558();
       } else if (var2 == 9) {
-         this.field3355 = var1.method3550();
+         this.field3355 = var1.readUnsignedShort();
       } else if (var2 == 10) {
          this.field3361 = var1.method3551();
       } else if (var2 == 11) {
          this.field3354 = 0;
       } else if (var2 == 12) {
-         this.field3360 = var1.method3544();
+         this.field3360 = var1.readUnsignedByte();
       } else if (var2 == 13) {
          this.field3347 = var1.method3551();
       } else if (var2 == 14) {
-         this.field3354 = var1.method3550();
+         this.field3354 = var1.readUnsignedShort();
       } else if (var2 == 17 || var2 == 18) {
-         this.field3362 = var1.method3550();
+         this.field3362 = var1.readUnsignedShort();
          if (this.field3362 == 65535) {
             this.field3362 = -1;
          }
 
-         this.field3368 = var1.method3550();
+         this.field3368 = var1.readUnsignedShort();
          if (this.field3368 == 65535) {
             this.field3368 = -1;
          }
 
          int var3 = -1;
          if (var2 == 18) {
-            var3 = var1.method3550();
+            var3 = var1.readUnsignedShort();
             if (var3 == 65535) {
                var3 = -1;
             }
          }
 
-         int var4 = var1.method3544();
+         int var4 = var1.readUnsignedByte();
          this.field3366 = new int[var4 + 2];
 
          for(int var5 = 0; var5 <= var4; ++var5) {
-            this.field3366[var5] = var1.method3550();
+            this.field3366[var5] = var1.readUnsignedShort();
             if (this.field3366[var5] == 65535) {
                this.field3366[var5] = -1;
             }
@@ -199,7 +199,7 @@ public class Class267 extends Class206 {
       if (this.field3362 != -1) {
          var1 = Class163.method3389(this.field3362);
       } else if (this.field3368 != -1) {
-         var1 = Class225.field2558[this.field3368];
+         var1 = Class225.clientVarps[this.field3368];
       }
 
       int var2;

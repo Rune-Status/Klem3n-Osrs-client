@@ -232,7 +232,7 @@ public enum Class15 implements Class188 {
                         var11 = 0;
 
                         while(true) {
-                           var12 = var66.method3562();
+                           var12 = var66.readSmart();
                            if (var12 == 0) {
                               break;
                            }
@@ -241,7 +241,7 @@ public enum Class15 implements Class188 {
                            var49 = var11 & 63;
                            var14 = var11 >> 6 & 63;
                            var15 = var11 >> 12;
-                           var16 = var66.method3544();
+                           var16 = var66.readUnsignedByte();
                            var17 = var16 >> 2;
                            var52 = var16 & 3;
                            var19 = var4 + var14;
@@ -403,7 +403,7 @@ public enum Class15 implements Class188 {
                                     var22 = 0;
 
                                     while(true) {
-                                       var23 = var56.method3562();
+                                       var23 = var56.readSmart();
                                        if (var23 == 0) {
                                           break;
                                        }
@@ -412,7 +412,7 @@ public enum Class15 implements Class188 {
                                        var24 = var22 & 63;
                                        var25 = var22 >> 6 & 63;
                                        var26 = var22 >> 12;
-                                       var27 = var56.method3544();
+                                       var27 = var56.readUnsignedByte();
                                        var28 = var27 >> 2;
                                        var29 = var27 & 3;
                                        if (var6 == var26 && var25 >= var15 && var25 < var15 + 8 && var24 >= var16 && var24 < var16 + 8) {
@@ -919,7 +919,7 @@ public enum Class15 implements Class188 {
             Class268.field3391.method3984();
             Class172 var65;
             if (Class182.field2334.method801()) {
-               var65 = Class26.method433(Class169.field2148, Client.field626.field1218);
+               var65 = Class26.method433(ClientPackets.field2148, Client.field626.field1218);
                var65.field2257.method3707(1057001181);
                Client.field626.method1980(var65);
             }
@@ -943,7 +943,7 @@ public enum Class15 implements Class188 {
             Class48.method947(30);
             Class54.method1017();
             Class49.method952();
-            var65 = Class26.method433(Class169.field2224, Client.field626.field1218);
+            var65 = Class26.method433(ClientPackets.field2224, Client.field626.field1218);
             Client.field626.method1980(var65);
             Class43.field368.vmethod3330();
 

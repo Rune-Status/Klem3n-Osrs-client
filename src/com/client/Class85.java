@@ -287,7 +287,7 @@ public class Class85 extends Class127 {
          }
 
          if (Class39.field341[13]) {
-            Client.field626.method1980(Class26.method433(Class169.field2142, Client.field626.field1218));
+            Client.field626.method1980(Class26.method433(ClientPackets.field2142, Client.field626.field1218));
             Client.field655 = 0;
          }
       }

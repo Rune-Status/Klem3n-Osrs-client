@@ -174,16 +174,16 @@ public class Class293 extends Class285 {
       }
 
       this.method5477(var4);
-      this.field3651 = var1.method3681();
-      var7 = var1.method3544();
+      this.field3651 = var1.readByte();
+      var7 = var1.readUnsignedByte();
       if (var7 != 255) {
          this.method5326();
 
          for(int var13 = 0; var13 < var7; ++var13) {
             Class281 var9 = (Class281)this.method5377(new Class291(var1.method3738(), this.field3656));
-            int var14 = var1.method3550();
+            int var14 = var1.readUnsignedShort();
             var9.method5412(var14, ++this.field3658 - 1);
-            var9.field3629 = var1.method3681();
+            var9.field3629 = var1.readByte();
             var1.method3738();
             this.method5482(var9);
          }
@@ -198,8 +198,8 @@ public class Class293 extends Class285 {
    )
    public final void method5489(Class182 var1) {
       Class291 var2 = new Class291(var1.method3738(), this.field3656);
-      int var3 = var1.method3550();
-      byte var4 = var1.method3681();
+      int var3 = var1.readUnsignedShort();
+      byte var4 = var1.readByte();
       boolean var5 = false;
       if (var4 == -128) {
          var5 = true;

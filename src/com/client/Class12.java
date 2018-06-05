@@ -743,7 +743,7 @@ public class Class12 {
                      }
 
                      if (var57) {
-                        Class169.method3447(var9, Class48.field432 - var10, Class48.field428 - var11);
+                        ClientPackets.method3447(var9, Class48.field432 - var10, Class48.field428 - var11);
                      }
 
                      if (var9.field2609 == 1400) {
@@ -1075,7 +1075,7 @@ public class Class12 {
    )
    static final void method110(String var0) {
       if (!var0.equals("")) {
-         Class172 var1 = Class26.method433(Class169.field2153, Client.field626.field1218);
+         Class172 var1 = Class26.method433(ClientPackets.field2153, Client.field626.field1218);
          var1.field2257.method3532(Class316.method5820(var0));
          var1.field2257.method3699(var0);
          Client.field626.method1980(var1);

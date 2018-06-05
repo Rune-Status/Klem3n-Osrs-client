@@ -392,7 +392,7 @@ public class Class321 {
                }
 
                if (var9) {
-                  Class172 var12 = Class26.method433(Class169.field2190, Client.field626.field1218);
+                  Class172 var12 = Class26.method433(ClientPackets.field2190, Client.field626.field1218);
                   var12.field2257.method3673(this.field3863.method4437());
                   Client.field626.method1980(var12);
                   this.field3849 = 0L;

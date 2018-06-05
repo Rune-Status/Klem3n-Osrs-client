@@ -139,14 +139,14 @@ public class Class65 {
             }
 
             var8.field2339 = 0;
-            var9 = var8.method3544();
+            var9 = var8.readUnsignedByte();
             if (var9 < 1 || var9 > 3) {
                throw new IOException("" + var9);
             }
 
             int var10 = 0;
             if (var9 > 1) {
-               var10 = var8.method3544();
+               var10 = var8.readUnsignedByte();
             }
 
             if (var9 <= 2) {
@@ -259,7 +259,7 @@ public class Class65 {
          Class50.field443[var1][var2][var3] = 0;
 
          while(true) {
-            var7 = var0.method3544();
+            var7 = var0.readUnsignedByte();
             if (var7 == 0) {
                if (var1 == 0) {
                   int[] var8 = Class50.field459[0][var2];
@@ -281,7 +281,7 @@ public class Class65 {
             }
 
             if (var7 == 1) {
-               int var14 = var0.method3544();
+               int var14 = var0.readUnsignedByte();
                if (var14 == 1) {
                   var14 = 0;
                }
@@ -295,7 +295,7 @@ public class Class65 {
             }
 
             if (var7 <= 49) {
-               Class165.field2033[var1][var2][var3] = var0.method3681();
+               Class165.field2033[var1][var2][var3] = var0.readByte();
                Class50.field446[var1][var2][var3] = (byte)((var7 - 2) / 4);
                Class19.field159[var1][var2][var3] = (byte)(var7 - 2 + var6 & 3);
             } else if (var7 <= 81) {
@@ -306,18 +306,18 @@ public class Class65 {
          }
       } else {
          while(true) {
-            var7 = var0.method3544();
+            var7 = var0.readUnsignedByte();
             if (var7 == 0) {
                break;
             }
 
             if (var7 == 1) {
-               var0.method3544();
+               var0.readUnsignedByte();
                break;
             }
 
             if (var7 <= 49) {
-               var0.method3544();
+               var0.readUnsignedByte();
             }
          }
       }
@@ -422,7 +422,7 @@ public class Class65 {
       garbageValue = "1540740873"
    )
    static void method1604() {
-      Class172 var0 = Class26.method433(Class169.field2215, Client.field626.field1218);
+      Class172 var0 = Class26.method433(ClientPackets.field2215, Client.field626.field1218);
       Class189 var1 = var0.field2257;
       int var2 = Client.field792 ? 2 : 1;
       var1.method3532(var2);

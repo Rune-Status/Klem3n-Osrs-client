@@ -16,28 +16,28 @@ public class Class10 extends Class16 {
       garbageValue = "-1858538420"
    )
    void method95(Class182 var1, Class182 var2) {
-      int var3 = var2.method3544();
+      int var3 = var2.readUnsignedByte();
       if (var3 != Class25.field212.field211) {
          throw new IllegalStateException("");
       } else {
-         super.field120 = var2.method3544();
-         super.field121 = var2.method3544();
-         super.field127 = var2.method3550();
-         super.field117 = var2.method3550();
-         super.field118 = var2.method3550();
-         super.field119 = var2.method3550();
+         super.field120 = var2.readUnsignedByte();
+         super.field121 = var2.readUnsignedByte();
+         super.field127 = var2.readUnsignedShort();
+         super.field117 = var2.readUnsignedShort();
+         super.field118 = var2.readUnsignedShort();
+         super.field119 = var2.readUnsignedShort();
          super.field121 = Math.min(super.field121, 4);
          super.field125 = new short[1][64][64];
          super.field123 = new short[super.field121][64][64];
          super.field124 = new byte[super.field121][64][64];
          super.field116 = new byte[super.field121][64][64];
          super.field126 = new Class19[super.field121][64][64][];
-         var3 = var1.method3544();
+         var3 = var1.readUnsignedByte();
          if (var3 != Class24.field208.field205) {
             throw new IllegalStateException("");
          } else {
-            int var4 = var1.method3544();
-            int var5 = var1.method3544();
+            int var4 = var1.readUnsignedByte();
+            int var5 = var1.readUnsignedByte();
             if (var4 == super.field118 && var5 == super.field119) {
                for(int var6 = 0; var6 < 64; ++var6) {
                   for(int var7 = 0; var7 < 64; ++var7) {
@@ -109,22 +109,22 @@ public class Class10 extends Class16 {
       Class84 var1 = new Class84();
       Class182 var2 = new Class182(var0);
       var2.field2339 = var2.payload.length - 2;
-      int var3 = var2.method3550();
+      int var3 = var2.readUnsignedShort();
       int var4 = var2.payload.length - 2 - var3 - 12;
       var2.field2339 = var4;
       int var5 = var2.method3671();
-      var1.field1192 = var2.method3550();
-      var1.field1193 = var2.method3550();
-      var1.field1188 = var2.method3550();
-      var1.field1195 = var2.method3550();
-      int var6 = var2.method3544();
+      var1.field1192 = var2.readUnsignedShort();
+      var1.field1193 = var2.readUnsignedShort();
+      var1.field1188 = var2.readUnsignedShort();
+      var1.field1195 = var2.readUnsignedShort();
+      int var6 = var2.readUnsignedByte();
       int var7;
       int var8;
       if (var6 > 0) {
          var1.field1194 = var1.method1944(var6);
 
          for(var7 = 0; var7 < var6; ++var7) {
-            var8 = var2.method3550();
+            var8 = var2.readUnsignedShort();
             Class197 var9 = new Class197(var8 > 0 ? Class146.method3193(var8) : 1);
             var1.field1194[var7] = var9;
 
@@ -143,13 +143,13 @@ public class Class10 extends Class16 {
       var1.field1191 = new String[var5];
 
       for(var7 = 0; var2.field2339 < var4; var1.field1189[var7++] = var8) {
-         var8 = var2.method3550();
+         var8 = var2.readUnsignedShort();
          if (var8 == 3) {
             var1.field1191[var7] = var2.method3738();
          } else if (var8 < 100 && var8 != 21 && var8 != 38 && var8 != 39) {
             var1.field1196[var7] = var2.method3671();
          } else {
-            var1.field1196[var7] = var2.method3544();
+            var1.field1196[var7] = var2.readUnsignedByte();
          }
       }
 

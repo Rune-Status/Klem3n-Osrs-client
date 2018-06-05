@@ -50,7 +50,7 @@ public class Class266 extends Class206 {
    )
    void method4978(Class182 var1) {
       while(true) {
-         int var2 = var1.method3544();
+         int var2 = var1.readUnsignedByte();
          if (var2 == 0) {
             return;
          }
@@ -66,9 +66,9 @@ public class Class266 extends Class206 {
    )
    void method4979(Class182 var1, int var2) {
       if (var2 == 1) {
-         this.field3336 = (char)var1.method3544();
+         this.field3336 = (char)var1.readUnsignedByte();
       } else if (var2 == 2) {
-         this.field3337 = (char)var1.method3544();
+         this.field3337 = (char)var1.readUnsignedByte();
       } else if (var2 == 3) {
          this.field3340 = var1.method3738();
       } else if (var2 == 4) {
@@ -76,7 +76,7 @@ public class Class266 extends Class206 {
       } else {
          int var3;
          if (var2 == 5) {
-            this.field3345 = var1.method3550();
+            this.field3345 = var1.readUnsignedShort();
             this.field3343 = new int[this.field3345];
             this.field3339 = new String[this.field3345];
 
@@ -85,7 +85,7 @@ public class Class266 extends Class206 {
                this.field3339[var3] = var1.method3738();
             }
          } else if (var2 == 6) {
-            this.field3345 = var1.method3550();
+            this.field3345 = var1.readUnsignedShort();
             this.field3343 = new int[this.field3345];
             this.field3344 = new int[this.field3345];
 

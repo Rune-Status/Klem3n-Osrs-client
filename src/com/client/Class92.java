@@ -109,7 +109,7 @@ public class Class92 extends Class204 {
 
          int var6;
          do {
-            var6 = var2.method3544();
+            var6 = var2.readUnsignedByte();
             var5 += var6;
          } while(var6 >= 255);
 

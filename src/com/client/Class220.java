@@ -37,8 +37,8 @@ public class Class220 {
    void method4328(byte[] var1) {
       this.field2530.payload = var1;
       this.field2530.field2339 = 10;
-      int var2 = this.field2530.method3550();
-      this.field2519 = this.field2530.method3550();
+      int var2 = this.field2530.readUnsignedShort();
+      this.field2519 = this.field2530.readUnsignedShort();
       this.field2524 = 500000;
       this.field2520 = new int[var2];
 
@@ -144,7 +144,7 @@ public class Class220 {
    int method4337(int var1, int var2) {
       int var4;
       if (var2 == 255) {
-         int var7 = this.field2530.method3544();
+         int var7 = this.field2530.readUnsignedByte();
          var4 = this.field2530.method3566();
          if (var7 == 47) {
             this.field2530.field2339 += var4;
@@ -165,11 +165,11 @@ public class Class220 {
          byte var3 = field2527[var2 - 128];
          var4 = var2;
          if (var3 >= 1) {
-            var4 = var2 | this.field2530.method3544() << 8;
+            var4 = var2 | this.field2530.readUnsignedByte() << 8;
          }
 
          if (var3 >= 2) {
-            var4 |= this.field2530.method3544() << 16;
+            var4 |= this.field2530.readUnsignedByte() << 16;
          }
 
          return var4;

@@ -333,7 +333,7 @@ public class Class107 {
       this.field1400.method2199(var1);
       this.field1401 = new Class96();
       this.field1401.method2199(var1);
-      int var2 = var1.method3544();
+      int var2 = var1.readUnsignedByte();
       if (var2 != 0) {
          --var1.field2339;
          this.field1392 = new Class96();
@@ -342,7 +342,7 @@ public class Class107 {
          this.field1393.method2199(var1);
       }
 
-      var2 = var1.method3544();
+      var2 = var1.readUnsignedByte();
       if (var2 != 0) {
          --var1.field2339;
          this.field1394 = new Class96();
@@ -351,7 +351,7 @@ public class Class107 {
          this.field1395.method2199(var1);
       }
 
-      var2 = var1.method3544();
+      var2 = var1.readUnsignedByte();
       if (var2 != 0) {
          --var1.field2339;
          this.field1396 = new Class96();
@@ -361,20 +361,20 @@ public class Class107 {
       }
 
       for(int var3 = 0; var3 < 10; ++var3) {
-         int var4 = var1.method3562();
+         int var4 = var1.readSmart();
          if (var4 == 0) {
             break;
          }
 
          this.field1406[var3] = var4;
          this.field1415[var3] = var1.method3561();
-         this.field1412[var3] = var1.method3562();
+         this.field1412[var3] = var1.readSmart();
       }
 
-      this.field1398 = var1.method3562();
-      this.field1402 = var1.method3562();
-      this.field1404 = var1.method3550();
-      this.field1405 = var1.method3550();
+      this.field1398 = var1.readSmart();
+      this.field1402 = var1.readSmart();
+      this.field1404 = var1.readUnsignedShort();
+      this.field1405 = var1.readUnsignedShort();
       this.field1403 = new Class104();
       this.field1410 = new Class96();
       this.field1403.method2425(var1, this.field1410);

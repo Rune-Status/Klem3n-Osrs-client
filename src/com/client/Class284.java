@@ -50,7 +50,7 @@ public class Class284 extends Class285 {
    public void method5317(Class182 var1, int var2) {
       while(true) {
          if (var1.field2339 < var2) {
-            int var3 = var1.method3544();
+            int var3 = var1.readUnsignedByte();
             boolean var4 = (var3 & 1) == 1;
             Class291 var5 = new Class291(var1.method3738(), this.field3615);
             Class291 var6 = new Class291(var1.method3738(), this.field3615);

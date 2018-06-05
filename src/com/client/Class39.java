@@ -156,7 +156,7 @@ public final class Class39 implements KeyListener, FocusListener {
       garbageValue = "123380361"
    )
    static final Class197 method691(Class182 var0, Class197 var1) {
-      int var2 = var0.method3544();
+      int var2 = var0.readUnsignedByte();
       int var3;
       if (var1 == null) {
          var3 = Class146.method3193(var2);
@@ -164,7 +164,7 @@ public final class Class39 implements KeyListener, FocusListener {
       }
 
       for(var3 = 0; var3 < var2; ++var3) {
-         boolean var4 = var0.method3544() == 1;
+         boolean var4 = var0.readUnsignedByte() == 1;
          int var5 = var0.method3552();
          Object var6;
          if (var4) {
@@ -202,7 +202,7 @@ public final class Class39 implements KeyListener, FocusListener {
          Client.field803 = 0;
          Client.field808 = var0;
          Client.field809 = var1;
-         var8 = Class26.method433(Class169.field2199, Client.field626.field1218);
+         var8 = Class26.method433(ClientPackets.field2199, Client.field626.field1218);
          var8.field2257.method3771(Class297.field3683);
          var8.field2257.method3532(field341[82] ? 1 : 0);
          var8.field2257.method3673(Class187.field2372);
@@ -218,7 +218,7 @@ public final class Class39 implements KeyListener, FocusListener {
          Client.field803 = 0;
          Client.field808 = var0;
          Client.field809 = var1;
-         var8 = Class26.method433(Class169.field2172, Client.field626.field1218);
+         var8 = Class26.method433(ClientPackets.field2172, Client.field626.field1218);
          var8.field2257.method3532(field341[82] ? 1 : 0);
          var8.field2257.method3594(Class40.field361);
          var8.field2257.method3771(Client.field754 + var1);
@@ -233,7 +233,7 @@ public final class Class39 implements KeyListener, FocusListener {
          Client.field803 = 0;
          Client.field808 = var0;
          Client.field809 = var1;
-         var8 = Class26.method433(Class169.field2186, Client.field626.field1218);
+         var8 = Class26.method433(ClientPackets.field2186, Client.field626.field1218);
          var8.field2257.method3755(Client.field754 + var1);
          var8.field2257.method3583(var0 + Class62.field868);
          var8.field2257.method3755(var3);
@@ -246,7 +246,7 @@ public final class Class39 implements KeyListener, FocusListener {
          Client.field803 = 0;
          Client.field808 = var0;
          Client.field809 = var1;
-         var8 = Class26.method433(Class169.field2169, Client.field626.field1218);
+         var8 = Class26.method433(ClientPackets.field2169, Client.field626.field1218);
          var8.field2257.method3582(var0 + Class62.field868);
          var8.field2257.method3755(Client.field754 + var1);
          var8.field2257.method3574(field341[82] ? 1 : 0);
@@ -259,7 +259,7 @@ public final class Class39 implements KeyListener, FocusListener {
          Client.field803 = 0;
          Client.field808 = var0;
          Client.field809 = var1;
-         var8 = Class26.method433(Class169.field2216, Client.field626.field1218);
+         var8 = Class26.method433(ClientPackets.field2216, Client.field626.field1218);
          var8.field2257.method3771(Client.field754 + var1);
          var8.field2257.method3771(var0 + Class62.field868);
          var8.field2257.method3771(var3);
@@ -272,7 +272,7 @@ public final class Class39 implements KeyListener, FocusListener {
          Client.field803 = 0;
          Client.field808 = var0;
          Client.field809 = var1;
-         var8 = Class26.method433(Class169.field2232, Client.field626.field1218);
+         var8 = Class26.method433(ClientPackets.field2232, Client.field626.field1218);
          var8.field2257.method3583(var3);
          var8.field2257.method3575(field341[82] ? 1 : 0);
          var8.field2257.method3771(var0 + Class62.field868);
@@ -290,7 +290,7 @@ public final class Class39 implements KeyListener, FocusListener {
                Client.field803 = 0;
                Client.field808 = var0;
                Client.field809 = var1;
-               var9 = Class26.method433(Class169.field2184, Client.field626.field1218);
+               var9 = Class26.method433(ClientPackets.field2184, Client.field626.field1218);
                var9.field2257.method3755(Class13.field84);
                var9.field2257.method3576(field341[82] ? 1 : 0);
                var9.field2257.method3582(var3);
@@ -307,7 +307,7 @@ public final class Class39 implements KeyListener, FocusListener {
                Client.field803 = 0;
                Client.field808 = var0;
                Client.field809 = var1;
-               var9 = Class26.method433(Class169.field2204, Client.field626.field1218);
+               var9 = Class26.method433(ClientPackets.field2204, Client.field626.field1218);
                var9.field2257.method3707(Class40.field361);
                var9.field2257.method3583(Client.field736);
                var9.field2257.method3582(var3);
@@ -323,7 +323,7 @@ public final class Class39 implements KeyListener, FocusListener {
                Client.field803 = 0;
                Client.field808 = var0;
                Client.field809 = var1;
-               var9 = Class26.method433(Class169.field2207, Client.field626.field1218);
+               var9 = Class26.method433(ClientPackets.field2207, Client.field626.field1218);
                var9.field2257.method3583(var3);
                var9.field2257.method3575(field341[82] ? 1 : 0);
                Client.field626.method1980(var9);
@@ -337,7 +337,7 @@ public final class Class39 implements KeyListener, FocusListener {
                Client.field803 = 0;
                Client.field808 = var0;
                Client.field809 = var1;
-               var9 = Class26.method433(Class169.field2223, Client.field626.field1218);
+               var9 = Class26.method433(ClientPackets.field2223, Client.field626.field1218);
                var9.field2257.method3771(var3);
                var9.field2257.method3576(field341[82] ? 1 : 0);
                Client.field626.method1980(var9);
@@ -351,7 +351,7 @@ public final class Class39 implements KeyListener, FocusListener {
                Client.field803 = 0;
                Client.field808 = var0;
                Client.field809 = var1;
-               var9 = Class26.method433(Class169.field2198, Client.field626.field1218);
+               var9 = Class26.method433(ClientPackets.field2198, Client.field626.field1218);
                var9.field2257.method3574(field341[82] ? 1 : 0);
                var9.field2257.method3771(var3);
                Client.field626.method1980(var9);
@@ -365,7 +365,7 @@ public final class Class39 implements KeyListener, FocusListener {
                Client.field803 = 0;
                Client.field808 = var0;
                Client.field809 = var1;
-               var9 = Class26.method433(Class169.field2229, Client.field626.field1218);
+               var9 = Class26.method433(ClientPackets.field2229, Client.field626.field1218);
                var9.field2257.method3574(field341[82] ? 1 : 0);
                var9.field2257.method3582(var3);
                Client.field626.method1980(var9);
@@ -379,7 +379,7 @@ public final class Class39 implements KeyListener, FocusListener {
                Client.field803 = 0;
                Client.field808 = var0;
                Client.field809 = var1;
-               var9 = Class26.method433(Class169.field2208, Client.field626.field1218);
+               var9 = Class26.method433(ClientPackets.field2208, Client.field626.field1218);
                var9.field2257.method3583(var3);
                var9.field2257.method3575(field341[82] ? 1 : 0);
                Client.field626.method1980(var9);
@@ -395,7 +395,7 @@ public final class Class39 implements KeyListener, FocusListener {
                   Client.field803 = 0;
                   Client.field808 = var0;
                   Client.field809 = var1;
-                  var9 = Class26.method433(Class169.field2189, Client.field626.field1218);
+                  var9 = Class26.method433(ClientPackets.field2189, Client.field626.field1218);
                   var9.field2257.method3771(Class13.field84);
                   var9.field2257.method3582(Class297.field3683);
                   var9.field2257.method3673(Class187.field2372);
@@ -412,7 +412,7 @@ public final class Class39 implements KeyListener, FocusListener {
                   Client.field803 = 0;
                   Client.field808 = var0;
                   Client.field809 = var1;
-                  var9 = Class26.method433(Class169.field2212, Client.field626.field1218);
+                  var9 = Class26.method433(ClientPackets.field2212, Client.field626.field1218);
                   var9.field2257.method3687(Class40.field361);
                   var9.field2257.method3582(var3);
                   var9.field2257.method3583(Client.field736);
@@ -426,7 +426,7 @@ public final class Class39 implements KeyListener, FocusListener {
                Client.field803 = 0;
                Client.field808 = var0;
                Client.field809 = var1;
-               var8 = Class26.method433(Class169.field2234, Client.field626.field1218);
+               var8 = Class26.method433(ClientPackets.field2234, Client.field626.field1218);
                var8.field2257.method3771(var3);
                var8.field2257.method3532(field341[82] ? 1 : 0);
                var8.field2257.method3583(Class297.field3683);
@@ -442,7 +442,7 @@ public final class Class39 implements KeyListener, FocusListener {
                Client.field803 = 0;
                Client.field808 = var0;
                Client.field809 = var1;
-               var8 = Class26.method433(Class169.field2143, Client.field626.field1218);
+               var8 = Class26.method433(ClientPackets.field2143, Client.field626.field1218);
                var8.field2257.method3583(var3);
                var8.field2257.method3582(var0 + Class62.field868);
                var8.field2257.method3583(Client.field736);
@@ -457,7 +457,7 @@ public final class Class39 implements KeyListener, FocusListener {
                Client.field803 = 0;
                Client.field808 = var0;
                Client.field809 = var1;
-               var8 = Class26.method433(Class169.field2210, Client.field626.field1218);
+               var8 = Class26.method433(ClientPackets.field2210, Client.field626.field1218);
                var8.field2257.method3771(Client.field754 + var1);
                var8.field2257.method3575(field341[82] ? 1 : 0);
                var8.field2257.method3583(var0 + Class62.field868);
@@ -470,7 +470,7 @@ public final class Class39 implements KeyListener, FocusListener {
                Client.field803 = 0;
                Client.field808 = var0;
                Client.field809 = var1;
-               var8 = Class26.method433(Class169.field2214, Client.field626.field1218);
+               var8 = Class26.method433(ClientPackets.field2214, Client.field626.field1218);
                var8.field2257.method3582(var3);
                var8.field2257.method3583(var0 + Class62.field868);
                var8.field2257.method3582(Client.field754 + var1);
@@ -483,7 +483,7 @@ public final class Class39 implements KeyListener, FocusListener {
                Client.field803 = 0;
                Client.field808 = var0;
                Client.field809 = var1;
-               var8 = Class26.method433(Class169.field2161, Client.field626.field1218);
+               var8 = Class26.method433(ClientPackets.field2161, Client.field626.field1218);
                var8.field2257.method3755(var0 + Class62.field868);
                var8.field2257.method3583(var3);
                var8.field2257.method3582(Client.field754 + var1);
@@ -496,7 +496,7 @@ public final class Class39 implements KeyListener, FocusListener {
                Client.field803 = 0;
                Client.field808 = var0;
                Client.field809 = var1;
-               var8 = Class26.method433(Class169.field2205, Client.field626.field1218);
+               var8 = Class26.method433(ClientPackets.field2205, Client.field626.field1218);
                var8.field2257.method3583(Client.field754 + var1);
                var8.field2257.method3583(var3);
                var8.field2257.method3582(var0 + Class62.field868);
@@ -509,7 +509,7 @@ public final class Class39 implements KeyListener, FocusListener {
                Client.field803 = 0;
                Client.field808 = var0;
                Client.field809 = var1;
-               var8 = Class26.method433(Class169.field2147, Client.field626.field1218);
+               var8 = Class26.method433(ClientPackets.field2147, Client.field626.field1218);
                var8.field2257.method3582(var3);
                var8.field2257.method3582(var0 + Class62.field868);
                var8.field2257.method3755(Client.field754 + var1);
@@ -532,7 +532,7 @@ public final class Class39 implements KeyListener, FocusListener {
                   }
 
                   if (var11) {
-                     var10 = Class26.method433(Class169.field2230, Client.field626.field1218);
+                     var10 = Class26.method433(ClientPackets.field2230, Client.field626.field1218);
                      var10.field2257.method3707(var1);
                      Client.field626.method1980(var10);
                   }
@@ -559,7 +559,7 @@ public final class Class39 implements KeyListener, FocusListener {
                   }
 
                   if (var2 == 26) {
-                     var8 = Class26.method433(Class169.field2195, Client.field626.field1218);
+                     var8 = Class26.method433(ClientPackets.field2195, Client.field626.field1218);
                      Client.field626.method1980(var8);
 
                      for(Class55 var14 = (Class55)Client.field741.method4018(); var14 != null; var14 = (Class55)Client.field741.method4019()) {
@@ -576,24 +576,24 @@ public final class Class39 implements KeyListener, FocusListener {
                      int var12;
                      Class230 var16;
                      if (var2 == 28) {
-                        var8 = Class26.method433(Class169.field2230, Client.field626.field1218);
+                        var8 = Class26.method433(ClientPackets.field2230, Client.field626.field1218);
                         var8.field2257.method3707(var1);
                         Client.field626.method1980(var8);
                         var16 = Class26.method434(var1);
                         if (var16.field2659 != null && var16.field2659[0][0] == 5) {
                            var12 = var16.field2659[0][1];
-                           Class225.field2558[var12] = 1 - Class225.field2558[var12];
+                           Class225.clientVarps[var12] = 1 - Class225.clientVarps[var12];
                            Class45.method749(var12);
                         }
                      } else if (var2 == 29) {
-                        var8 = Class26.method433(Class169.field2230, Client.field626.field1218);
+                        var8 = Class26.method433(ClientPackets.field2230, Client.field626.field1218);
                         var8.field2257.method3707(var1);
                         Client.field626.method1980(var8);
                         var16 = Class26.method434(var1);
                         if (var16.field2659 != null && var16.field2659[0][0] == 5) {
                            var12 = var16.field2659[0][1];
-                           if (Class225.field2558[var12] != var16.field2720[0]) {
-                              Class225.field2558[var12] = var16.field2720[0];
+                           if (Class225.clientVarps[var12] != var16.field2720[0]) {
+                              Class225.clientVarps[var12] = var16.field2720[0];
                               Class45.method749(var12);
                            }
                         }
@@ -604,7 +604,7 @@ public final class Class39 implements KeyListener, FocusListener {
                            Class60.method1114(Client.field744);
                         }
                      } else if (var2 == 31) {
-                        var8 = Class26.method433(Class169.field2196, Client.field626.field1218);
+                        var8 = Class26.method433(ClientPackets.field2196, Client.field626.field1218);
                         var8.field2257.method3687(Class187.field2372);
                         var8.field2257.method3582(var0);
                         var8.field2257.method3582(Class297.field3683);
@@ -616,7 +616,7 @@ public final class Class39 implements KeyListener, FocusListener {
                         Class240.field3096 = Class26.method434(var1);
                         Client.field582 = var0;
                      } else if (var2 == 32) {
-                        var8 = Class26.method433(Class169.field2165, Client.field626.field1218);
+                        var8 = Class26.method433(ClientPackets.field2165, Client.field626.field1218);
                         var8.field2257.method3673(Class40.field361);
                         var8.field2257.method3755(Client.field736);
                         var8.field2257.method3594(var1);
@@ -627,7 +627,7 @@ public final class Class39 implements KeyListener, FocusListener {
                         Class240.field3096 = Class26.method434(var1);
                         Client.field582 = var0;
                      } else if (var2 == 33) {
-                        var8 = Class26.method433(Class169.field2175, Client.field626.field1218);
+                        var8 = Class26.method433(ClientPackets.field2175, Client.field626.field1218);
                         var8.field2257.method3771(var0);
                         var8.field2257.method3583(var3);
                         var8.field2257.method3707(var1);
@@ -636,7 +636,7 @@ public final class Class39 implements KeyListener, FocusListener {
                         Class240.field3096 = Class26.method434(var1);
                         Client.field582 = var0;
                      } else if (var2 == 34) {
-                        var8 = Class26.method433(Class169.field2193, Client.field626.field1218);
+                        var8 = Class26.method433(ClientPackets.field2193, Client.field626.field1218);
                         var8.field2257.method3755(var0);
                         var8.field2257.method3582(var3);
                         var8.field2257.method3687(var1);
@@ -645,7 +645,7 @@ public final class Class39 implements KeyListener, FocusListener {
                         Class240.field3096 = Class26.method434(var1);
                         Client.field582 = var0;
                      } else if (var2 == 35) {
-                        var8 = Class26.method433(Class169.field2166, Client.field626.field1218);
+                        var8 = Class26.method433(ClientPackets.field2166, Client.field626.field1218);
                         var8.field2257.method3582(var0);
                         var8.field2257.method3673(var1);
                         var8.field2257.method3582(var3);
@@ -654,7 +654,7 @@ public final class Class39 implements KeyListener, FocusListener {
                         Class240.field3096 = Class26.method434(var1);
                         Client.field582 = var0;
                      } else if (var2 == 36) {
-                        var8 = Class26.method433(Class169.field2191, Client.field626.field1218);
+                        var8 = Class26.method433(ClientPackets.field2191, Client.field626.field1218);
                         var8.field2257.method3771(var3);
                         var8.field2257.method3583(var0);
                         var8.field2257.method3673(var1);
@@ -663,7 +663,7 @@ public final class Class39 implements KeyListener, FocusListener {
                         Class240.field3096 = Class26.method434(var1);
                         Client.field582 = var0;
                      } else if (var2 == 37) {
-                        var8 = Class26.method433(Class169.field2197, Client.field626.field1218);
+                        var8 = Class26.method433(ClientPackets.field2197, Client.field626.field1218);
                         var8.field2257.method3673(var1);
                         var8.field2257.method3582(var0);
                         var8.field2257.method3583(var3);
@@ -689,7 +689,7 @@ public final class Class39 implements KeyListener, FocusListener {
                         }
 
                         if (var2 == 39) {
-                           var8 = Class26.method433(Class169.field2171, Client.field626.field1218);
+                           var8 = Class26.method433(ClientPackets.field2171, Client.field626.field1218);
                            var8.field2257.method3594(var1);
                            var8.field2257.method3583(var3);
                            var8.field2257.method3771(var0);
@@ -698,7 +698,7 @@ public final class Class39 implements KeyListener, FocusListener {
                            Class240.field3096 = Class26.method434(var1);
                            Client.field582 = var0;
                         } else if (var2 == 40) {
-                           var8 = Class26.method433(Class169.field2151, Client.field626.field1218);
+                           var8 = Class26.method433(ClientPackets.field2151, Client.field626.field1218);
                            var8.field2257.method3707(var1);
                            var8.field2257.method3582(var3);
                            var8.field2257.method3582(var0);
@@ -707,7 +707,7 @@ public final class Class39 implements KeyListener, FocusListener {
                            Class240.field3096 = Class26.method434(var1);
                            Client.field582 = var0;
                         } else if (var2 == 41) {
-                           var8 = Class26.method433(Class169.field2202, Client.field626.field1218);
+                           var8 = Class26.method433(ClientPackets.field2202, Client.field626.field1218);
                            var8.field2257.method3582(var3);
                            var8.field2257.method3582(var0);
                            var8.field2257.method3687(var1);
@@ -716,7 +716,7 @@ public final class Class39 implements KeyListener, FocusListener {
                            Class240.field3096 = Class26.method434(var1);
                            Client.field582 = var0;
                         } else if (var2 == 42) {
-                           var8 = Class26.method433(Class169.field2200, Client.field626.field1218);
+                           var8 = Class26.method433(ClientPackets.field2200, Client.field626.field1218);
                            var8.field2257.method3771(var3);
                            var8.field2257.method3594(var1);
                            var8.field2257.method3755(var0);
@@ -725,7 +725,7 @@ public final class Class39 implements KeyListener, FocusListener {
                            Class240.field3096 = Class26.method434(var1);
                            Client.field582 = var0;
                         } else if (var2 == 43) {
-                           var8 = Class26.method433(Class169.field2140, Client.field626.field1218);
+                           var8 = Class26.method433(ClientPackets.field2140, Client.field626.field1218);
                            var8.field2257.method3583(var3);
                            var8.field2257.method3707(var1);
                            var8.field2257.method3582(var0);
@@ -742,7 +742,7 @@ public final class Class39 implements KeyListener, FocusListener {
                               Client.field803 = 0;
                               Client.field808 = var0;
                               Client.field809 = var1;
-                              var9 = Class26.method433(Class169.field2206, Client.field626.field1218);
+                              var9 = Class26.method433(ClientPackets.field2206, Client.field626.field1218);
                               var9.field2257.method3532(field341[82] ? 1 : 0);
                               var9.field2257.method3755(var3);
                               Client.field626.method1980(var9);
@@ -756,7 +756,7 @@ public final class Class39 implements KeyListener, FocusListener {
                               Client.field803 = 0;
                               Client.field808 = var0;
                               Client.field809 = var1;
-                              var9 = Class26.method433(Class169.field2181, Client.field626.field1218);
+                              var9 = Class26.method433(ClientPackets.field2181, Client.field626.field1218);
                               var9.field2257.method3576(field341[82] ? 1 : 0);
                               var9.field2257.method3755(var3);
                               Client.field626.method1980(var9);
@@ -770,7 +770,7 @@ public final class Class39 implements KeyListener, FocusListener {
                               Client.field803 = 0;
                               Client.field808 = var0;
                               Client.field809 = var1;
-                              var9 = Class26.method433(Class169.field2137, Client.field626.field1218);
+                              var9 = Class26.method433(ClientPackets.field2137, Client.field626.field1218);
                               var9.field2257.method3574(field341[82] ? 1 : 0);
                               var9.field2257.method3583(var3);
                               Client.field626.method1980(var9);
@@ -784,7 +784,7 @@ public final class Class39 implements KeyListener, FocusListener {
                               Client.field803 = 0;
                               Client.field808 = var0;
                               Client.field809 = var1;
-                              var9 = Class26.method433(Class169.field2220, Client.field626.field1218);
+                              var9 = Class26.method433(ClientPackets.field2220, Client.field626.field1218);
                               var9.field2257.method3771(var3);
                               var9.field2257.method3532(field341[82] ? 1 : 0);
                               Client.field626.method1980(var9);
@@ -798,7 +798,7 @@ public final class Class39 implements KeyListener, FocusListener {
                               Client.field803 = 0;
                               Client.field808 = var0;
                               Client.field809 = var1;
-                              var9 = Class26.method433(Class169.field2217, Client.field626.field1218);
+                              var9 = Class26.method433(ClientPackets.field2217, Client.field626.field1218);
                               var9.field2257.method3576(field341[82] ? 1 : 0);
                               var9.field2257.method3771(var3);
                               Client.field626.method1980(var9);
@@ -812,7 +812,7 @@ public final class Class39 implements KeyListener, FocusListener {
                               Client.field803 = 0;
                               Client.field808 = var0;
                               Client.field809 = var1;
-                              var9 = Class26.method433(Class169.field2163, Client.field626.field1218);
+                              var9 = Class26.method433(ClientPackets.field2163, Client.field626.field1218);
                               var9.field2257.method3575(field341[82] ? 1 : 0);
                               var9.field2257.method3771(var3);
                               Client.field626.method1980(var9);
@@ -826,7 +826,7 @@ public final class Class39 implements KeyListener, FocusListener {
                               Client.field803 = 0;
                               Client.field808 = var0;
                               Client.field809 = var1;
-                              var9 = Class26.method433(Class169.field2222, Client.field626.field1218);
+                              var9 = Class26.method433(ClientPackets.field2222, Client.field626.field1218);
                               var9.field2257.method3582(var3);
                               var9.field2257.method3574(field341[82] ? 1 : 0);
                               Client.field626.method1980(var9);
@@ -840,7 +840,7 @@ public final class Class39 implements KeyListener, FocusListener {
                               Client.field803 = 0;
                               Client.field808 = var0;
                               Client.field809 = var1;
-                              var9 = Class26.method433(Class169.field2178, Client.field626.field1218);
+                              var9 = Class26.method433(ClientPackets.field2178, Client.field626.field1218);
                               var9.field2257.method3771(var3);
                               var9.field2257.method3575(field341[82] ? 1 : 0);
                               Client.field626.method1980(var9);
@@ -851,7 +851,7 @@ public final class Class39 implements KeyListener, FocusListener {
                                  if (var2 == 58) {
                                     var17 = Class146.method3191(var1, var0);
                                     if (var17 != null) {
-                                       var9 = Class26.method433(Class169.field2159, Client.field626.field1218);
+                                       var9 = Class26.method433(ClientPackets.field2159, Client.field626.field1218);
                                        var9.field2257.method3673(Class40.field361);
                                        var9.field2257.method3771(Client.field737);
                                        var9.field2257.method3673(var1);
@@ -870,7 +870,7 @@ public final class Class39 implements KeyListener, FocusListener {
                                     Client.field803 = 0;
                                     Client.field808 = var0;
                                     Client.field809 = var1;
-                                    var8 = Class26.method433(Class169.field2139, Client.field626.field1218);
+                                    var8 = Class26.method433(ClientPackets.field2139, Client.field626.field1218);
                                     var8.field2257.method3582(Client.field754 + var1);
                                     var8.field2257.method3771(var3);
                                     var8.field2257.method3583(var0 + Class62.field868);
@@ -884,7 +884,7 @@ public final class Class39 implements KeyListener, FocusListener {
                                     Client.field682 = var7;
                                     Client.field684 = 2;
                                     Client.field803 = 0;
-                                    var8 = Class26.method433(Class169.field2162, Client.field626.field1218);
+                                    var8 = Class26.method433(ClientPackets.field2162, Client.field626.field1218);
                                     var8.field2257.method3755(var3);
                                     Client.field626.method1980(var8);
                                     break label961;
@@ -903,7 +903,7 @@ public final class Class39 implements KeyListener, FocusListener {
                                        }
 
                                        if (var18 != null) {
-                                          var10 = Class26.method433(Class169.field2146, Client.field626.field1218);
+                                          var10 = Class26.method433(ClientPackets.field2146, Client.field626.field1218);
                                           var10.field2257.method3582(var18.field3510);
                                           Client.field626.method1980(var10);
                                        }
@@ -916,7 +916,7 @@ public final class Class39 implements KeyListener, FocusListener {
                                     Client.field682 = var7;
                                     Client.field684 = 2;
                                     Client.field803 = 0;
-                                    var8 = Class26.method433(Class169.field2182, Client.field626.field1218);
+                                    var8 = Class26.method433(ClientPackets.field2182, Client.field626.field1218);
                                     var8.field2257.method3583(var3);
                                     Client.field626.method1980(var8);
                                     break label961;
@@ -927,7 +927,7 @@ public final class Class39 implements KeyListener, FocusListener {
                                     if (var17 != null && var17.field2725[var0] >= 100000) {
                                        Class143.method3172(27, "", var17.field2725[var0] + " x " + Class111.method2563(var3).field3433);
                                     } else {
-                                       var9 = Class26.method433(Class169.field2182, Client.field626.field1218);
+                                       var9 = Class26.method433(ClientPackets.field2182, Client.field626.field1218);
                                        var9.field2257.method3583(var3);
                                        Client.field626.method1980(var9);
                                     }

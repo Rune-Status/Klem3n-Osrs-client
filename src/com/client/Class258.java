@@ -81,7 +81,7 @@ public class Class258 extends Class206 {
    )
    void method4864(Class182 var1) {
       while(true) {
-         int var2 = var1.method3544();
+         int var2 = var1.readUnsignedByte();
          if (var2 == 0) {
             return;
          }
@@ -97,39 +97,39 @@ public class Class258 extends Class206 {
    )
    void method4865(Class182 var1, int var2) {
       if (var2 == 1) {
-         this.field3268 = var1.method3550();
+         this.field3268 = var1.readUnsignedShort();
       } else if (var2 == 2) {
-         this.field3271 = var1.method3550();
+         this.field3271 = var1.readUnsignedShort();
       } else if (var2 == 4) {
-         this.field3276 = var1.method3550();
+         this.field3276 = var1.readUnsignedShort();
       } else if (var2 == 5) {
-         this.field3277 = var1.method3550();
+         this.field3277 = var1.readUnsignedShort();
       } else if (var2 == 6) {
-         this.field3278 = var1.method3550();
+         this.field3278 = var1.readUnsignedShort();
       } else if (var2 == 7) {
-         this.field3273 = var1.method3544();
+         this.field3273 = var1.readUnsignedByte();
       } else if (var2 == 8) {
-         this.field3269 = var1.method3544();
+         this.field3269 = var1.readUnsignedByte();
       } else {
          int var3;
          int var4;
          if (var2 == 40) {
-            var3 = var1.method3544();
+            var3 = var1.readUnsignedByte();
             this.field3266 = new short[var3];
             this.field3270 = new short[var3];
 
             for(var4 = 0; var4 < var3; ++var4) {
-               this.field3266[var4] = (short)var1.method3550();
-               this.field3270[var4] = (short)var1.method3550();
+               this.field3266[var4] = (short)var1.readUnsignedShort();
+               this.field3270[var4] = (short)var1.readUnsignedShort();
             }
          } else if (var2 == 41) {
-            var3 = var1.method3544();
+            var3 = var1.readUnsignedByte();
             this.field3274 = new short[var3];
             this.field3275 = new short[var3];
 
             for(var4 = 0; var4 < var3; ++var4) {
-               this.field3274[var4] = (short)var1.method3550();
-               this.field3275[var4] = (short)var1.method3550();
+               this.field3274[var4] = (short)var1.readUnsignedShort();
+               this.field3275[var4] = (short)var1.readUnsignedShort();
             }
          }
       }

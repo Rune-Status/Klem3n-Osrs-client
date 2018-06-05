@@ -141,16 +141,16 @@ public class Class18 implements Class31 {
       garbageValue = "-40"
    )
    public void vmethod639(Class182 var1) {
-      this.field137 = var1.method3544();
-      this.field148 = var1.method3544();
-      this.field138 = var1.method3550();
-      this.field139 = var1.method3550();
-      this.field140 = var1.method3550();
-      this.field141 = var1.method3550();
-      this.field142 = var1.method3550();
-      this.field136 = var1.method3550();
-      this.field144 = var1.method3550();
-      this.field145 = var1.method3550();
+      this.field137 = var1.readUnsignedByte();
+      this.field148 = var1.readUnsignedByte();
+      this.field138 = var1.readUnsignedShort();
+      this.field139 = var1.readUnsignedShort();
+      this.field140 = var1.readUnsignedShort();
+      this.field141 = var1.readUnsignedShort();
+      this.field142 = var1.readUnsignedShort();
+      this.field136 = var1.readUnsignedShort();
+      this.field144 = var1.readUnsignedShort();
+      this.field145 = var1.readUnsignedShort();
       this.method179();
    }
 

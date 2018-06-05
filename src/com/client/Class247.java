@@ -73,17 +73,17 @@ public abstract class Class247 {
       int var2 = Class187.method3812(var1, 0, var3);
       this.field3175 = var2;
       Class182 var4 = new Class182(Class47.method912(var1));
-      int var5 = var4.method3544();
+      int var5 = var4.readUnsignedByte();
       if (var5 >= 5 && var5 <= 7) {
          if (var5 >= 6) {
             var4.method3671();
          }
 
-         int var6 = var4.method3544();
+         int var6 = var4.readUnsignedByte();
          if (var5 >= 7) {
             this.field3171 = var4.method3611();
          } else {
-            this.field3171 = var4.method3550();
+            this.field3171 = var4.readUnsignedShort();
          }
 
          int var7 = 0;
@@ -99,7 +99,7 @@ public abstract class Class247 {
             }
          } else {
             for(var9 = 0; var9 < this.field3171; ++var9) {
-               this.field3161[var9] = var7 += var4.method3550();
+               this.field3161[var9] = var7 += var4.readUnsignedShort();
                if (this.field3161[var9] > var8) {
                   var8 = this.field3161[var9];
                }
@@ -131,7 +131,7 @@ public abstract class Class247 {
          }
 
          for(var9 = 0; var9 < this.field3171; ++var9) {
-            this.field3166[this.field3161[var9]] = var4.method3550();
+            this.field3166[this.field3161[var9]] = var4.readUnsignedShort();
          }
 
          int var10;
@@ -165,7 +165,7 @@ public abstract class Class247 {
                this.field3167[var10] = new int[var11];
 
                for(var13 = 0; var13 < var11; ++var13) {
-                  var14 = this.field3167[var10][var13] = var7 += var4.method3550();
+                  var14 = this.field3167[var10][var13] = var7 += var4.readUnsignedShort();
                   if (var14 > var12) {
                      var12 = var14;
                   }

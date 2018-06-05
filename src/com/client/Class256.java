@@ -24,7 +24,7 @@ public class Class256 extends Class206 {
    )
    void method4848(Class182 var1) {
       while(true) {
-         int var2 = var1.method3544();
+         int var2 = var1.readUnsignedByte();
          if (var2 == 0) {
             return;
          }

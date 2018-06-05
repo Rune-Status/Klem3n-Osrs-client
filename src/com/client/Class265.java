@@ -30,7 +30,7 @@ public class Class265 extends Class206 {
    )
    public void method4960(Class182 var1) {
       while(true) {
-         int var2 = var1.method3544();
+         int var2 = var1.readUnsignedByte();
          if (var2 == 0) {
             return;
          }

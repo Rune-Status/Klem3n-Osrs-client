@@ -40,7 +40,7 @@ public class Class45 {
             if (var7) {
                Class172 var10;
                if (var0 == 1) {
-                  var10 = Class26.method433(Class169.field2149, Client.field626.field1218);
+                  var10 = Class26.method433(ClientPackets.field2149, Client.field626.field1218);
                   var10.field2257.method3707(var1);
                   var10.field2257.method3755(var2);
                   var10.field2257.method3755(var3);
@@ -48,7 +48,7 @@ public class Class45 {
                }
 
                if (var0 == 2) {
-                  var10 = Class26.method433(Class169.field2141, Client.field626.field1218);
+                  var10 = Class26.method433(ClientPackets.field2141, Client.field626.field1218);
                   var10.field2257.method3707(var1);
                   var10.field2257.method3755(var2);
                   var10.field2257.method3755(var3);
@@ -56,7 +56,7 @@ public class Class45 {
                }
 
                if (var0 == 3) {
-                  var10 = Class26.method433(Class169.field2155, Client.field626.field1218);
+                  var10 = Class26.method433(ClientPackets.field2155, Client.field626.field1218);
                   var10.field2257.method3707(var1);
                   var10.field2257.method3755(var2);
                   var10.field2257.method3755(var3);
@@ -64,7 +64,7 @@ public class Class45 {
                }
 
                if (var0 == 4) {
-                  var10 = Class26.method433(Class169.field2144, Client.field626.field1218);
+                  var10 = Class26.method433(ClientPackets.field2144, Client.field626.field1218);
                   var10.field2257.method3707(var1);
                   var10.field2257.method3755(var2);
                   var10.field2257.method3755(var3);
@@ -72,7 +72,7 @@ public class Class45 {
                }
 
                if (var0 == 5) {
-                  var10 = Class26.method433(Class169.field2213, Client.field626.field1218);
+                  var10 = Class26.method433(ClientPackets.field2213, Client.field626.field1218);
                   var10.field2257.method3707(var1);
                   var10.field2257.method3755(var2);
                   var10.field2257.method3755(var3);
@@ -80,7 +80,7 @@ public class Class45 {
                }
 
                if (var0 == 6) {
-                  var10 = Class26.method433(Class169.field2231, Client.field626.field1218);
+                  var10 = Class26.method433(ClientPackets.field2231, Client.field626.field1218);
                   var10.field2257.method3707(var1);
                   var10.field2257.method3755(var2);
                   var10.field2257.method3755(var3);
@@ -88,7 +88,7 @@ public class Class45 {
                }
 
                if (var0 == 7) {
-                  var10 = Class26.method433(Class169.field2160, Client.field626.field1218);
+                  var10 = Class26.method433(ClientPackets.field2160, Client.field626.field1218);
                   var10.field2257.method3707(var1);
                   var10.field2257.method3755(var2);
                   var10.field2257.method3755(var3);
@@ -96,7 +96,7 @@ public class Class45 {
                }
 
                if (var0 == 8) {
-                  var10 = Class26.method433(Class169.field2226, Client.field626.field1218);
+                  var10 = Class26.method433(ClientPackets.field2226, Client.field626.field1218);
                   var10.field2257.method3707(var1);
                   var10.field2257.method3755(var2);
                   var10.field2257.method3755(var3);
@@ -104,7 +104,7 @@ public class Class45 {
                }
 
                if (var0 == 9) {
-                  var10 = Class26.method433(Class169.field2138, Client.field626.field1218);
+                  var10 = Class26.method433(ClientPackets.field2138, Client.field626.field1218);
                   var10.field2257.method3707(var1);
                   var10.field2257.method3755(var2);
                   var10.field2257.method3755(var3);
@@ -112,7 +112,7 @@ public class Class45 {
                }
 
                if (var0 == 10) {
-                  var10 = Class26.method433(Class169.field2180, Client.field626.field1218);
+                  var10 = Class26.method433(ClientPackets.field2180, Client.field626.field1218);
                   var10.field2257.method3707(var1);
                   var10.field2257.method3755(var2);
                   var10.field2257.method3755(var3);
@@ -134,7 +134,7 @@ public class Class45 {
       Class6.method75();
       int var1 = Class63.method1549(var0).field3230;
       if (var1 != 0) {
-         int var2 = Class225.field2558[var0];
+         int var2 = Class225.clientVarps[var0];
          if (var1 == 1) {
             if (var2 == 1) {
                Class122.method2830(0.9D);

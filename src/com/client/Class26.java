@@ -23,7 +23,7 @@ public class Class26 {
       signature = "(Lfi;Lgs;I)Lfn;",
       garbageValue = "-1221349687"
    )
-   public static Class172 method433(Class169 var0, Class190 var1) {
+   public static Class172 method433(ClientPackets var0, Class190 var1) {
       Class172 var2;
       if (Class172.field2258 == 0) {
          var2 = new Class172();

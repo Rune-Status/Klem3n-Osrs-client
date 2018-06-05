@@ -44,22 +44,22 @@ public class Class66 {
    )
    Class66(Class182 var1) {
       if (var1 != null && var1.payload != null) {
-         int var2 = var1.method3544();
+         int var2 = var1.readUnsignedByte();
          if (var2 >= 0 && var2 <= field964) {
-            if (var1.method3544() == 1) {
+            if (var1.readUnsignedByte() == 1) {
                this.field960 = true;
             }
 
             if (var2 > 1) {
-               this.field958 = var1.method3544() == 1;
+               this.field958 = var1.readUnsignedByte() == 1;
             }
 
             if (var2 > 3) {
-               this.field957 = var1.method3544();
+               this.field957 = var1.readUnsignedByte();
             }
 
             if (var2 > 2) {
-               int var3 = var1.method3544();
+               int var3 = var1.readUnsignedByte();
 
                for(int var4 = 0; var4 < var3; ++var4) {
                   int var5 = var1.method3671();

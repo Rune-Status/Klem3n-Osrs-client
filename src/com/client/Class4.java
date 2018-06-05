@@ -43,8 +43,8 @@ public class Class4 {
       garbageValue = "0"
    )
    public Class4(Class182 var1, boolean var2) {
-      this.field31 = var1.method3681();
-      this.field29 = var1.method3550();
+      this.field31 = var1.readByte();
+      this.field29 = var1.readUnsignedShort();
       this.field30 = var1.method3671();
       this.field33 = var1.method3671();
       this.field32 = var1.method3671();
@@ -105,17 +105,17 @@ public class Class4 {
             byte[] var0 = Class49.field439.method3116();
             Class182 var1 = new Class182(var0);
             var1.method3671();
-            Class65.field945 = var1.method3550();
+            Class65.field945 = var1.readUnsignedShort();
             Class65.field949 = new Class65[Class65.field945];
 
             Class65 var3;
             for(int var2 = 0; var2 < Class65.field945; var3.field943 = var2++) {
                var3 = Class65.field949[var2] = new Class65();
-               var3.field947 = var1.method3550();
+               var3.field947 = var1.readUnsignedShort();
                var3.field948 = var1.method3671();
                var3.field950 = var1.method3738();
                var3.field951 = var1.method3738();
-               var3.field952 = var1.method3544();
+               var3.field952 = var1.readUnsignedByte();
                var3.field955 = var1.method3551();
             }
 

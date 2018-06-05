@@ -148,7 +148,7 @@ public final class Class17 {
    )
    public static void method172(Class182 var0, int var1) {
       Class312 var2 = new Class312();
-      var2.field3749 = var0.method3544();
+      var2.field3749 = var0.readUnsignedByte();
       var2.field3758 = var0.method3671();
       var2.field3748 = new int[var2.field3749];
       var2.field3751 = new int[var2.field3749];
@@ -159,7 +159,7 @@ public final class Class17 {
 
       for(int var3 = 0; var3 < var2.field3749; ++var3) {
          try {
-            int var4 = var0.method3544();
+            int var4 = var0.readUnsignedByte();
             String var5;
             String var6;
             int var7;
@@ -167,7 +167,7 @@ public final class Class17 {
                if (var4 == 3 || var4 == 4) {
                   var5 = var0.method3738();
                   var6 = var0.method3738();
-                  var7 = var0.method3544();
+                  var7 = var0.readUnsignedByte();
                   String[] var8 = new String[var7];
 
                   for(int var9 = 0; var9 < var7; ++var9) {

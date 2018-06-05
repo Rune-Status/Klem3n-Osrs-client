@@ -143,7 +143,7 @@ public class Class36 {
                int var10 = var8 * var5 - var4 * var7 >> 11;
                int var11 = var9 + Class138.field1876.field931 >> 7;
                int var12 = Class138.field1876.field881 - var10 >> 7;
-               Class172 var13 = Class26.method433(Class169.field2135, Client.field626.field1218);
+               Class172 var13 = Class26.method433(ClientPackets.field2135, Client.field626.field1218);
                var13.field2257.method3532(18);
                var13.field2257.method3755(var11 + Class62.field868);
                var13.field2257.method3575(Class39.field341[82] ? (Class39.field341[81] ? 2 : 1) : 0);

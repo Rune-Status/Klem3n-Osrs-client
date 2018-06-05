@@ -40,7 +40,7 @@ public class Class263 extends Class206 {
    )
    public void method4941(Class182 var1) {
       while(true) {
-         int var2 = var1.method3544();
+         int var2 = var1.readUnsignedByte();
          if (var2 == 0) {
             return;
          }
@@ -56,9 +56,9 @@ public class Class263 extends Class206 {
    )
    void method4942(Class182 var1, int var2) {
       if (var2 == 1) {
-         this.field3320 = var1.method3550();
-         this.field3323 = var1.method3544();
-         this.field3326 = var1.method3544();
+         this.field3320 = var1.readUnsignedShort();
+         this.field3323 = var1.readUnsignedByte();
+         this.field3326 = var1.readUnsignedByte();
       }
 
    }

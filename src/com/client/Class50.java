@@ -91,7 +91,7 @@ public final class Class50 {
       }
 
       if (Client.field589 >= 25) {
-         Class172 var2 = Class26.method433(Class169.field2215, Client.field626.field1218);
+         Class172 var2 = Class26.method433(ClientPackets.field2215, Client.field626.field1218);
          Class189 var3 = var2.field2257;
          int var4 = Client.field792 ? 2 : 1;
          var3.method3532(var4);
